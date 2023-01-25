@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: {{projectTitle}}</title>
+  <title>HTML Academy: Взгляните на жизнь
+    иначе!</title>
 </head>
 
-<body>
+<body class="page__body">
 
   <header class="header-page">
-    <img class="logo-text" src="" alt="логотип.">
-    <button class="button-menu" type="button"></button>
+    <img class="header-page__logo-text" src="" alt="логотип.">
+
     <nav class="header-navigation">
+      <button class="header-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       <ol class="header-navigation-list">
         <li class="__navigation-item">главная</li>
         <li class="__navigation-item">фотографии</li>
@@ -61,9 +63,30 @@
       </ul>
       <img class="promo-foto" src="" alt="телефон с надписью на экране-всем привет">
     </section>
+    <section class="feeedback">
+      <h2 class="visually-hidden">отзывы клиентов</h2>
+      <ul class="reviews-list">
+        <li class="reviews-item">
+          <p class="reviews-title">Николай Петров</p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+          на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </li>
+        <li class="reviews-item">
+          <p class="reviews-title"> </p>
+        </li>
+      </ul>
+      <ol class="pagination-reviews-list">
+        <li class="pagination-reviews-item"><button class="reviews-pagination-button reviews-pagination-button-current"
+            type="button"></button><span class="visually-hidden">первый отзыв.</span></li>
+        <li class="pagination-reviews-item"><button class="reviews-pagination-button" type="button"></button><span
+            class="visually-hidden">второй отзыв.</span></li>
+        <li class="pagination-reviews-item"><button class="reviews-pagination-button" type="button"></button><span
+            class="visually-hidden">третий отзыв.</span></li>
+      </ol>
+    </section>
   </main>
 
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
+  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе
+     «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
   <footer class="footer-page"></footer>
 </body>
 
