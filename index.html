@@ -15,10 +15,10 @@
     <nav class="header-navigation">
       <button class="header-navigation__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       <ol class="header-navigation-list">
-        <li class="__navigation-item">главная</li>
-        <li class="__navigation-item">фотографии</li>
-        <li class="__navigation-item">конкурс</li>
-        <li class="__navigation-item">HTML ACADEMY</li>
+        <li class="header-navigation__item"><a>главная</a></li>
+        <li class="header-navigation__item"><a href="foto.html"> фотографии</a></li>
+        <li class="header-navigation__item"><a href="contest.html">конкурс</a></li>
+        <li class="header-navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
       </ol>
     </nav>
   </header>
@@ -63,47 +63,73 @@
       </ul>
       <img class="promo-foto" src="" alt="телефон с надписью на экране-всем привет">
     </section>
-    <section class="feeedback">
+    <section class="reviews">
       <h2 class="visually-hidden">отзывы клиентов</h2>
-      <ul class="reviews-list">
-        <li class="reviews-item">
+      <div class="slider">
+      <ul class="reviews-list slider__list">
+        <li class="reviews-item slider__item">
           <p class="reviews-title">Николай Петров</p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть
           на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </li>
-        <li class="reviews-item">
-          <p class="reviews-title"> </p>
+        <li class="reviews-item slider__item">
+          <p class="reviews-title"></p>
+        </li>
+        <li class="reviews-item slider__item">
+          <p class="reviews-title"></p>
         </li>
       </ul>
-      <ol class="pagination-reviews-list">
+      <p class="reviews-toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+      <!-- <ol class="pagination-reviews-list">
         <li class="pagination-reviews-item"><button class="reviews-pagination-button reviews-pagination-button-current"
             type="button"></button><span class="visually-hidden">первый отзыв.</span></li>
         <li class="pagination-reviews-item"><button class="reviews-pagination-button" type="button"></button><span
             class="visually-hidden">второй отзыв.</span></li>
         <li class="pagination-reviews-item"><button class="reviews-pagination-button" type="button"></button><span
             class="visually-hidden">третий отзыв.</span></li>
-      </ol>
+      </ol> -->
     </section>
     <section class="tariffs">
+      <div class="slider">
       <p class="tariffs-promo-label">хит</p>
-      <table class="tariffs-table">
+      <table class="tariffs-table slider__list">
         <thead class="tariffs-table-header"><p>стандарт</p>
           <p>3,99 USD</p></thead>
         <tbody class="table-body">
-        <tr class="row-title">
+        <tr class="row-title slider__item">
           <td>Розовый фильтр</td>
           <td><img class="option-choose-mark" src="" alt="чек-бокс выбора опции."></td>
         </tr>
             
-          <tr>
+          <tr class="slider__item">
             <td>Смайлики</td>
             <td><img class="option-choose-mark" src="" alt="чек-бокс выбора опции."></td>
           </tr>
-          <tr>
+          <tr class="slider__item">
             <td>Комментарии</td>
             <td><img class="option-choose-mark" src="" alt="чек-бокс выбора опции."></td>
         </tr>
       </tbody>
       </table>
+      <p class="reviews-toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">контакты</h2>
+      <p class="contacts-title">Остались вопросы? Свяжитесь с нами!</p>
+      <ul class="contacts-list">
+        <li class="contacts-phone-title">Звоните:<a class="contacts-phone" href=""></a></li>
+        <li class="contacts-email-title">Пишите:<a class="contacts-email" href=""></a></li>
+        <li class="contacts-address-title">Приезжайте в гости:<a class="contacts-address" href=""></a></li>
+    </ul>
     </section>
   </main>
 
