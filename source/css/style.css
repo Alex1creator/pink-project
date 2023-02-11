@@ -1,1 +1,4 @@
-body {}
+.page__body {
+  background-image: url("../img/back-mobile.jpg");
+}
+/*# sourceMappingURL=style.css.map */
