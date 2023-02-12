@@ -1,0 +1,37 @@
+@hover-color: #D22856;
+@active-color:#FFFFFF;
+@focus-color: #00ffea;
+
+.header-page {
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.header-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-page__logo-text {
+  margin: 22px 21px 20px 20px;
+
+  &:hover path {
+    fill: @hover-color;
+  }
+
+  &:active path {
+    fill: @active-color;
+    opacity: 0.3;
+  }
+
+}
+
+.header-page__navigation-toggle {
+  width: 100px;
+
+  text-align: end;
+}
+
+.header-page__navigation {
+  display: none;
+}

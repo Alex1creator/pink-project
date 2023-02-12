@@ -6,4 +6,29 @@
   background-position: top center;
   background-color: #f4a460;
 }
+.header-page {
+  background-color: #000000;
+  opacity: 0.3;
+}
+.header-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header-page__logo-text {
+  margin: 22px 21px 20px 20px;
+}
+.header-page__logo-text:hover path {
+  fill: #D22856;
+}
+.header-page__logo-text:active path {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
+.header-page__navigation-toggle {
+  width: 100px;
+  text-align: end;
+}
+.header-page__navigation {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
