@@ -33,7 +33,25 @@
   border: none;
 }
 .header-page__navigation {
-  display: none;
+  width: inherit;
+}
+.header-page__navigation-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header-page__navigation-item {
+  color: #ffffff;
+  text-align: center;
+}
+.header-page__navigation-item a {
+  color: inherit;
+  text-decoration: none;
+  text-align: inherit;
 }
 .visually-hidden {
   position: absolute;
