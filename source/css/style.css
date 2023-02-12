@@ -6,16 +6,8 @@
   background-position: top center;
   background-color: #f4a460;
 }
-.header-page {
-  background-color: #000000;
-  opacity: 0.3;
-}
 .header-page__wrapper {
   display: flex;
-  justify-content: space-between;
-}
-.header-page__logo-text {
-  margin: 22px 21px 20px 20px;
 }
 .header-page__logo-text:hover path {
   fill: #D22856;
@@ -24,11 +16,33 @@
   fill: #FFFFFF;
   opacity: 0.3;
 }
+.header-page__logo-text--phone {
+  margin: 22px 21px 20px 20px;
+}
 .header-page__navigation-toggle {
+  background-image: url("../img/open-menu-btn.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-page__navigation-toggle--phone {
   width: 100px;
-  text-align: end;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  border: none;
 }
 .header-page__navigation {
   display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

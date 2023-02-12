@@ -2,18 +2,26 @@
 @active-color:#FFFFFF;
 @focus-color: #00ffea;
 
-.header-page {
-  background-color: #000000;
-  opacity: 0.3;
-}
+// .header-page {
+
+// }
+
+// .header-page__container {
+//   background-color: #000000;
+//   opacity: 0.3;
+// }
 
 .header-page__wrapper {
   display: flex;
-  justify-content: space-between;
+  // background-color: #000000;
+  // opacity: 0.3;
+
+  // }
+
 }
 
+
 .header-page__logo-text {
-  margin: 22px 21px 20px 20px;
 
   &:hover path {
     fill: @hover-color;
@@ -26,10 +34,23 @@
 
 }
 
-.header-page__navigation-toggle {
-  width: 100px;
+.header-page__logo-text--phone {
+  margin: 22px 21px 20px 20px;
+}
 
-  text-align: end;
+.header-page__navigation-toggle {
+  background-image: url("../img/open-menu-btn.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-page__navigation-toggle--phone {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  border: none;
 }
 
 .header-page__navigation {
