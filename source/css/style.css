@@ -8,6 +8,7 @@
 }
 .header-page__wrapper {
   display: flex;
+  background-color: #000000;
 }
 .header-page__logo-text:hover path {
   fill: #D22856;
