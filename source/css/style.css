@@ -6,9 +6,33 @@
   background-position: top center;
   background-color: #f4a460;
 }
+@font-face {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans light";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensanslight.woff2"), url("../fonts/opensanslight.woff");
+  font-weight: 300;
+}
+.header-page {
+  width: inherit;
+}
 .header-page__wrapper {
   display: flex;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .header-page__logo-text:hover path {
   fill: #D22856;
@@ -34,6 +58,7 @@
   border: none;
 }
 .header-page__navigation {
+  display: none;
   width: inherit;
 }
 .header-page__navigation-list {
@@ -46,13 +71,25 @@
   margin: 0;
 }
 .header-page__navigation-item {
+  width: inherit;
   color: #ffffff;
   text-align: center;
 }
 .header-page__navigation-item a {
+  display: inline-block;
+  width: inherit;
+  font-family: "Open Sans bold", serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
   color: inherit;
   text-decoration: none;
   text-align: inherit;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  background: #283645;
+  box-shadow: 0 -1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 .visually-hidden {
   position: absolute;
@@ -63,5 +100,22 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.buttons-block {
+  width: inherit;
+  background-color: #1d2631;
+}
+.slogan-block__title {
+  width: 280px;
+  font-family: "Open Sans light", serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin: 19px auto 34px auto;
+  text-align: center;
+  color: #ffffff;
+}
+.slogan-block__image {
+  vertical-align: bottom;
 }
 /*# sourceMappingURL=style.css.map */
