@@ -23,9 +23,9 @@
 @font-face {
   font-family: "Open Sans light";
   font-style: normal;
+  font-weight: 300;
   font-display: swap;
   src: url("../fonts/opensanslight.woff2"), url("../fonts/opensanslight.woff");
-  font-weight: 300;
 }
 .header-page {
   width: inherit;
@@ -104,6 +104,41 @@
 .buttons-block {
   width: inherit;
   background-color: #1d2631;
+  text-align: center;
+}
+.buttons-block__download-button {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 29px;
+  border: 3px solid #ffffff;
+  padding: 18px 39px 18px 38px;
+  text-decoration: none;
+  font-family: "Open Sans bold", serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 28px auto;
+}
+.buttons-block__link-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 82px 78px 82px;
+  justify-content: center;
+  align-items: center;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.buttons-block__description-buttons {
+  font-family: "Open Sans light", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 280px;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  margin: 0 auto;
 }
 .slogan-block__title {
   width: 280px;
@@ -117,5 +152,35 @@
 }
 .slogan-block__image {
   vertical-align: bottom;
+}
+.promo__header {
+  font-family: "Open Sans light", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #283645;
+  margin: 0;
+  background-color: #ffffff;
+}
+.promo__intro {
+  font-family: "Open Sans light", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #283645;
+  margin: 0;
+  background-color: #ffffff;
+}
+.promo__advantage-list {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  background: linear-gradient(177deg, #ffffff 20px, #f2f2f2 20px, #f2f2f2);
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
