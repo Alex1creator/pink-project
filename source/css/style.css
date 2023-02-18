@@ -244,6 +244,7 @@
   background-color: #ffffff;
 }
 .reviews__list {
+  width: 280px;
   list-style-type: none;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -252,7 +253,17 @@
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
+.reviews__item {
+  text-align: center;
+}
 .reviews__title {
   margin: 0 auto;
+  font-family: "Open Sans bold", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.reviews__title-intro {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
