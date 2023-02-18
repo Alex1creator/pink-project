@@ -192,7 +192,7 @@
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   padding-top: 86px;
-  padding-bottom: 48px;
+  padding-bottom: 41px;
   background: linear-gradient(174deg, #ffffff 35px, #f2f2f2 35px, #f2f2f2);
   list-style-type: none;
 }
@@ -231,7 +231,28 @@
           padding-inline-start: 0;
   background-color: #f2f2f2;
 }
+.promo__foto-item {
+  text-align: center;
+}
 .promo__foto-item:not(:last-of-type) {
   display: none;
+}
+.effect {
+  display: none;
+}
+.reviews {
+  background-color: #ffffff;
+}
+.reviews__list {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.reviews__title {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
