@@ -9,19 +9,24 @@
 }
 
 .reviews__list {
-  width: 280px;
+  width: inherit;
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+  padding: 41px 20px 21px;
 }
 
 .reviews__item {
-  font-family: "Open Sans";
+  font-family: "Open Sans", serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  &:not(:first-of-type) {
+    display: none;
+  }
 }
 
 .reviews__title {
@@ -30,8 +35,36 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 14px;
 }
 
 .reviews__title-intro {
   display: none;
+}
+
+.reviews__toggles {
+  margin: 0;
+  text-align: center;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #283645;
+  border: none;
+}
+
+.slider__toggle--current {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 4px;
 }
