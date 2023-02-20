@@ -1,6 +1,7 @@
 .tariffs {
   padding-top: 170px;
   background: linear-gradient(177deg, #ffffff 55px, #f2f2f2 55px, #f2f2f2);
+  padding-bottom: 333px;
 }
 
 .tariffs__promo-label {
@@ -10,18 +11,52 @@
 
 .tariffs__table {
   width: 616px;
+  border-spacing: 2px;
+}
 
+.tariffs__table--mobile {
+  position: absolute;
+  top: 2189px;
+  left: -150px;
 }
 
 .tariffs__table-header {
 
 }
 
+.tariffs__table-head {
+  // display: grid;
+  // grid-template-columns: 276px 276px 276px 276px;
+}
 
 .tariffs__table-title {
   &:not(:first-of-type) {
     background-color: #283645;
     color: #ffffff;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
+}
 
+.tariffs__price {
+  display: block;
+  width: 276px;
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.tariffs__table-body {
+  background: #ffffff;
+}
+
+.tariffs__toggles {
+  position: relative;
+  top: 273px;
+  margin: 0;
+  text-align: center;
 }

@@ -127,9 +127,9 @@
       <h2 class="visually-hidden">тарифные планы приложения</h2>
       <div class="slider">
         <p class="tariffs__promo-label">хит</p>
-        <table class="tariffs__table slider__list">
+        <table class="tariffs__table slider__list tariffs__table--mobile">
           <thead class="tariffs__table-header">
-            <tr>
+            <tr class="tariffs__table-head">
               <th class="tariffs__table-title"></th>
               <th class="tariffs__table-title">База <span class="tariffs__price">1,99 USD</span> </th>
               <th class="tariffs__table-title">стандарт <span class="tariffs__price">3,99 USD</span></th>
@@ -167,9 +167,12 @@
           </tbody>
         </table>
         <p class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">
+              первый тариф</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">
+              второй тариф</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">
+              третий тариф</span></button>
         </p>
       </div>
     </section>
