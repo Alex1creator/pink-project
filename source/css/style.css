@@ -307,9 +307,9 @@
   margin: 0 4px;
 }
 .tariffs {
-  padding-top: 120px;
+  padding-top: 138px;
   background: linear-gradient(177deg, #ffffff 55px, #f2f2f2 55px, #f2f2f2);
-  padding-bottom: 333px;
+  padding-bottom: 47px;
 }
 .tariffs__promo-label {
   margin: 0;
@@ -318,29 +318,31 @@
 .tariffs__wrapper-mobile {
   width: 320px;
   overflow: hidden;
+  margin-bottom: 35px;
 }
 .tariffs__table {
   width: 616px;
   border-spacing: 2px;
 }
 .tariffs__table--mobile {
-  margin-left: -360px;
+  margin-left: -429px;
 }
 .tariffs__table-title:not(:first-of-type) {
   background-color: #283645;
   color: #ffffff;
   font-family: "Open Sans", serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 26px;
   text-transform: uppercase;
   overflow: hidden;
 }
-.tariffs__table-title:nth-of-type(3)::before {
+.tariffs__table-title:nth-of-type(3) {
   background-image: url("../img/hit74x74.png");
   background-repeat: no-repeat;
   background-position: top left;
-  content: "";
 }
 .tariffs__price {
   display: block;
@@ -353,10 +355,99 @@
 .tariffs__table-body {
   background: #ffffff;
 }
+.tariffs__row-title td {
+  padding: 0 10px;
+  text-align: center;
+}
+.tariffs__row-title .tariffs__row-features {
+  display: inline-block;
+  text-align: left;
+  width: 147px;
+}
+.tariffs__row-title:nth-of-type(1) .tariffs__row--data-mobile:nth-of-type(3)::before {
+  content: "РОЗОВЫЙ ФИЛЬТР";
+  display: inline-block;
+  width: 138px;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 13px 70px 14px 0;
+}
+.tariffs__row-title:nth-of-type(2) .tariffs__row--data-mobile:nth-of-type(3)::before {
+  content: "смайлики";
+  display: inline-block;
+  width: 138px;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 13px 70px 14px 0;
+}
+.tariffs__row-title:nth-of-type(3) .tariffs__row--data-mobile:nth-of-type(3)::before {
+  content: "комментарии";
+  display: inline-block;
+  width: 141px;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 13px 70px 14px 0;
+}
+.tariffs__option-mark {
+  vertical-align: middle;
+}
 .tariffs__toggles {
-  position: relative;
-  top: 273px;
   margin: 0;
   text-align: center;
+}
+.contacts {
+  font-family: "Open Sans", serif;
+  padding-top: 40px;
+}
+.contacts__title {
+  margin: 0 auto;
+  text-align: center;
+  width: 222px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 35px;
+}
+.contacts__list {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style-type: none;
+}
+.contacts__phone-title,
+.contacts__email-title,
+.contacts__address-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

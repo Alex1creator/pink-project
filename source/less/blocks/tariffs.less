@@ -1,7 +1,7 @@
 .tariffs {
-  padding-top: 120px;
+  padding-top: 138px;
   background: linear-gradient(177deg, #ffffff 55px, #f2f2f2 55px, #f2f2f2);
-  padding-bottom: 333px;
+  padding-bottom: 47px;
 }
 
 .tariffs__promo-label {
@@ -12,6 +12,7 @@
 .tariffs__wrapper-mobile {
   width: 320px;
   overflow: hidden;
+  margin-bottom: 35px;
 }
 
 .tariffs__table {
@@ -20,16 +21,7 @@
 }
 
 .tariffs__table--mobile {
-  margin-left: -360px;
-}
-
-.tariffs__table-header {
-
-}
-
-.tariffs__table-head {
-  // display: grid;
-  // grid-template-columns: 276px 276px 276px 276px;
+  margin-left: -429px;
 }
 
 .tariffs__table-title {
@@ -38,24 +30,17 @@
     color: #ffffff;
     font-family: "Open Sans", serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 26px;
     text-transform: uppercase;
     overflow: hidden;
   }
-  &:nth-of-type(3)::before {
+  &:nth-of-type(3) {
     background-image: url("../img/hit74x74.png");
     background-repeat: no-repeat;
     background-position: top left;
-    content: "";
-    // display: block;
-    // width: 150px;
-    // font-family: "Open Sans", serif;
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 30px;
-    // background-color: #D22856;
-    // transform: rotate(-45deg) translate(0px, 0px);
   }
 }
 
@@ -72,9 +57,63 @@
   background: #ffffff;
 }
 
+.tariffs__row-title {
+  td {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .tariffs__row-features {
+    display: inline-block;
+    text-align: left;
+    width: 147px;
+  }
+
+  &:nth-of-type(1) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    content: "РОЗОВЫЙ ФИЛЬТР";
+    display: inline-block;
+    width: 138px;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 13px 70px 14px 0;
+  }
+
+  &:nth-of-type(2) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    content: "смайлики";
+    display: inline-block;
+    width: 138px;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 13px 70px 14px 0;
+  }
+
+  &:nth-of-type(3) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    content: "комментарии";
+    display: inline-block;
+    width: 141px;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 13px 70px 14px 0;
+  }
+}
+
+.tariffs__option-mark {
+  vertical-align: middle;
+}
+
 .tariffs__toggles {
-  position: relative;
-  top: 273px;
   margin: 0;
   text-align: center;
 }
