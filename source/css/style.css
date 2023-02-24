@@ -410,6 +410,8 @@
 .contacts {
   font-family: "Open Sans", serif;
   padding-top: 40px;
+  padding-bottom: 39px;
+  background-color: #ffffff;
 }
 .contacts__title {
   margin: 0 auto;
@@ -449,5 +451,55 @@
   font-size: 24px;
   line-height: 33px;
   text-decoration: none;
+}
+.contacts__map--mobile {
+  width: inherit;
+  overflow: hidden;
+  height: 219px;
+}
+.contacts__map--mobile::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
+  border-top: 33px solid #ffffff;
+  border-left: 159px solid transparent;
+  border-right: 159px solid transparent;
+  border-bottom: 33px solid transparent;
+}
+.footer-page {
+  background-color: #ffffff;
+}
+.footer-page__logo-link--mobile {
+  display: block;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.footer-page__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 172px;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin: 0 auto;
+}
+.footer-page__social-link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  text-align: center;
+}
+.footer-page__social-icon {
+  padding-top: 14px;
 }
 /*# sourceMappingURL=style.css.map */
