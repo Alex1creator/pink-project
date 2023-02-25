@@ -631,7 +631,14 @@
   margin-bottom: 11px;
 }
 .main-catalog__reaction {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
   margin: 0;
   text-transform: uppercase;
+  color: #d22856;
+}
+.main-catalog__icon-like--mobile {
+  margin-right: 19px;
 }
 /*# sourceMappingURL=style.css.map */
