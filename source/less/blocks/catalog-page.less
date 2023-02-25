@@ -78,7 +78,9 @@
 }
 
 .main-catalog__img {
-  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+
 }
 
 .main-catalog__foto-description {
@@ -99,6 +101,10 @@
   line-height: 24px;
   margin: 0 20px 20px;
   padding: 18px 0 18px 18px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .main-catalog__user-description {
@@ -124,4 +130,20 @@
 
 .main-catalog__icon-like--mobile {
   margin-right: 19px;
+}
+
+.main-catalog__call-to-action {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.main-catalog__call-to-action--mobile {
+  background-color: #ffffff;
+  text-align: center;
+  width: 280px;
+  padding: 49px 20px 52px;
 }
