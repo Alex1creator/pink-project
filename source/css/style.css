@@ -551,7 +551,7 @@
   font-size: 24px;
   line-height: 33px;
   padding-top: 28px;
-  padding-bottom: 62px;
+  padding-bottom: 76px;
 }
 .main-catalog__intro {
   position: relative;
@@ -569,6 +569,7 @@
   line-height: 30px;
 }
 .main-catalog__foto {
+  position: relative;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -582,10 +583,16 @@
 .first-foto::before {
   content: "ПАНОРАМА ДНЯ";
   display: block;
-  width: 140px;
+  width: 119px;
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 19px;
   text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #D22856;
+  padding: 10px 10px 11px 11px;
 }
 /*# sourceMappingURL=style.css.map */
