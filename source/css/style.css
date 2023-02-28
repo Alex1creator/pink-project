@@ -581,6 +581,9 @@
           margin-inline-start: 0;
   -webkit-margin-end: 0;
           margin-inline-end: 0;
+  margin: 0 0 20px 0;
+}
+.main-catalog__foto:last-of-type {
   margin: 0;
 }
 .first-foto::before {
@@ -616,11 +619,8 @@
 .main-catalog__foto-description--mobile {
   font-size: 14px;
   line-height: 24px;
-  margin: 0 20px 20px;
+  margin: 0 20px;
   padding: 18px 0 18px 18px;
-}
-.main-catalog__foto-description--mobile:last-of-type {
-  margin-bottom: 0;
 }
 .main-catalog__user-description {
   -webkit-margin-before: 0;
@@ -638,6 +638,10 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   margin: 0;
   text-transform: uppercase;
   color: #d22856;
@@ -660,5 +664,31 @@
   text-align: center;
   width: 280px;
   padding: 49px 20px 52px;
+}
+.main-catalog__redactor {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  background-color: #ffffff;
+}
+.main-catalog__img-redactor {
+  display: block;
+  margin: 0 auto;
+}
+.main-catalog__instruments-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 /*# sourceMappingURL=style.css.map */
