@@ -531,7 +531,7 @@
   font-style: normal;
   width: 320px;
   margin: 0 auto;
-  background-image: url(../img/back-mobile.jpg);
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #f4a460;
@@ -670,7 +670,7 @@
   background-color: #ffffff;
   text-align: center;
   width: 280px;
-  padding: 0 20px 62px;
+  padding: 0 20px 42px;
 }
 .main-catalog__redactor {
   -webkit-margin-before: 0;
@@ -681,7 +681,8 @@
           margin-inline-start: 0;
   -webkit-margin-end: 0;
           margin-inline-end: 0;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  padding-top: 20px;
 }
 .main-catalog__img-redactor {
   display: block;
@@ -705,5 +706,37 @@
 }
 .main-catalog__instruments-buttons {
   border: none;
+}
+.main-catalog__range {
+  background: #f2f2f2;
+}
+.main-catalog__ranger {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 0;
+}
+.main-catalog__ranger-scale-fill-mobile,
+.main-catalog__ranger-scale-contrast-mobile {
+  display: none;
+}
+.main-catalog__ranger-bar-crop-mobile {
+  position: relative;
+  padding: 35px 0;
+}
+.main-catalog__ranger-bar-crop-mobile::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #283645;
+}
+.main-catalog__ranger-mobile {
+  position: absolute;
+  top: 29px;
+  right: 73px;
 }
 /*# sourceMappingURL=style.css.map */
