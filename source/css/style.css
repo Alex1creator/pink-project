@@ -417,7 +417,6 @@
 .contacts {
   font-family: "Open Sans", serif;
   padding-top: 40px;
-  padding-bottom: 39px;
   background-color: #ffffff;
 }
 .contacts__title {
@@ -478,6 +477,7 @@
 }
 .footer-page {
   background-color: #ffffff;
+  padding-top: 39px;
   padding-bottom: 40px;
 }
 .footer-page__logo-link--mobile {
@@ -500,6 +500,7 @@
   margin: 0 auto 40px;
 }
 .footer-page__social-link {
+  position: relative;
   display: block;
   width: 42px;
   height: 42px;
@@ -508,7 +509,10 @@
   text-align: center;
 }
 .footer-page__social-icon {
-  padding-top: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .designed__title--mobile {
   text-align: center;
@@ -742,10 +746,13 @@
   margin: 0 auto;
   background-color: #283645;
 }
-.main-catalog__ranger-mobile {
+.main-catalog__ranger--mobile {
   position: absolute;
   top: 29px;
   right: 73px;
+}
+.main-catalog__ranger--mobile:active {
+  background-color: #d22856;
 }
 .main-catalog__buttons-list {
   list-style-type: none;
@@ -757,30 +764,55 @@
           padding-inline-start: 0;
   background: #f2f2f2;
 }
+.main-catalog__buttons-item--mobile {
+  padding: 10px 0 0;
+}
+.main-catalog__buttons-item--mobile:first-of-type {
+  padding: 37px 0 0;
+}
+.main-catalog__buttons-item--mobile:last-of-type {
+  padding: 10px 0 42px;
+}
 .main-catalog__button-post {
   display: block;
   width: 280px;
-  padding: 17px;
+  padding: 17px 17px 15px;
   border-radius: 30px;
   border: 3px solid #d22856;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  color: #d22856;
+}
+.main-catalog__button-post:hover {
+  background-color: #d22856;
+  color: #ffffff;
+}
+.main-catalog__button-post:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .main-catalog__button-escape {
   display: block;
   width: 280px;
-  padding: 17px;
+  padding: 17px 17px 15px;
   border-radius: 30px;
-  border: 3px solid #d22856;
+  border: 3px solid #283645;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  color: #283645;
+  opacity: 0.1;
 }
-.main-catalog__button-post--mobile {
-  margin: 37px auto 0;
+.main-catalog__button-escape:hover {
+  opacity: 0.3;
 }
+.main-catalog__button-escape:active {
+  background: #283645;
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-catalog__button-post--mobile,
 .main-catalog__button-escape--mobile {
-  margin: 10px auto 37px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
