@@ -508,6 +508,12 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
   text-align: center;
 }
+.footer-page__social-link:hover {
+  border: 3px solid #283645;
+}
+.footer-page__social-link:active {
+  opacity: 0.3;
+}
 .footer-page__social-icon {
   position: absolute;
   top: 50%;
@@ -528,6 +534,13 @@
 .designed__title--mobile a {
   margin-left: 18px;
   vertical-align: middle;
+}
+.designed__icon:hover path {
+  fill: #283645;
+}
+.designed__icon:active path {
+  fill: #283645;
+  opacity: 0.3;
 }
 .catalog-page__body {
   font-family: "Open Sans", serif;
@@ -708,8 +721,38 @@
   align-items: center;
   padding: 40px 0 0;
 }
-.main-catalog__instruments-buttons {
+.main-catalog__instrument-crop {
   border: none;
+}
+.main-catalog__instrument-crop:hover .main-catalog__crop {
+  fill: #283645;
+  opacity: 0.5;
+}
+.main-catalog__instrument-crop:active .main-catalog__crop {
+  fill: #d22856;
+  opacity: 1;
+}
+.main-catalog__instrument-fill {
+  border: none;
+}
+.main-catalog__instrument-fill:hover .main-catalog__fill {
+  fill: #283645;
+  opacity: 0.5;
+}
+.main-catalog__instrument-fill:active .main-catalog__fill {
+  fill: #d22856;
+  opacity: 1;
+}
+.main-catalog__instrument-contrast {
+  border: none;
+}
+.main-catalog__instrument-contrast:hover .main-catalog__contrast {
+  fill: #283645;
+  opacity: 0.5;
+}
+.main-catalog__instrument-contrast:active .main-catalog__contrast {
+  fill: #d22856;
+  opacity: 1;
 }
 .main-catalog__range {
   background: #f2f2f2;

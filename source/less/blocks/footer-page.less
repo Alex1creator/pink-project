@@ -34,6 +34,14 @@
   border-radius: 50%;
   border: 3px solid rgba(40, 54, 69, 0.1);
   text-align: center;
+
+  &:hover {
+    border: 3px solid rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer-page__social-icon {
@@ -55,5 +63,16 @@
   a {
     margin-left: 18px;
     vertical-align: middle;
+  }
+}
+
+.designed__icon {
+  &:hover path {
+    fill: #283645;
+  }
+
+  &:active path {
+    fill: #283645;
+    opacity: 0.3;
   }
 }
