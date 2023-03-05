@@ -897,6 +897,10 @@
   padding: 44px 20px 15px;
   text-align: center;
 }
+.forms-main__form {
+  width: inherit;
+  margin-top: 0;
+}
 .forms-main__form-name {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
@@ -940,5 +944,52 @@
   display: inline-block;
   padding-left: 44px;
   margin-top: 19px;
+}
+.forms-main__options {
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+  -webkit-padding-after: 0;
+          padding-block-end: 0;
+  border: none;
+  background-color: #ffffff;
+}
+.forms-main__options legend {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+  border: none;
+  background-color: #ffffff;
+}
+.forms-main__achievements-title {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  color: #d22856;
+  text-align: center;
+  font-weight: 400;
+}
+.forms-main__achievements-title--mobile {
+  padding: 0 51px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.forms-main__achievements-list {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 /*# sourceMappingURL=style.css.map */
