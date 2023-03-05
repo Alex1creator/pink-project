@@ -922,4 +922,23 @@
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
+.forms-main__form-field {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+.forms-main__field-name {
+  display: block;
+  width: 240px;
+  margin: 5px auto 0;
+  padding: 14px 16px 14px 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.forms-main__form-field--mobile span {
+  display: inline-block;
+  padding-left: 44px;
+  margin-top: 19px;
+}
 /*# sourceMappingURL=style.css.map */
