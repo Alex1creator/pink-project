@@ -916,6 +916,7 @@
           padding-block-end: 0;
   border: none;
   background-color: #ffffff;
+  padding-bottom: 44px;
 }
 .forms-main__list-name {
   list-style-type: none;
@@ -979,9 +980,11 @@
   font-weight: 400;
 }
 .forms-main__achievements-title--mobile {
-  padding: 0 51px;
+  padding: 38px 51px;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 .forms-main__achievements-list {
   list-style-type: none;
@@ -991,5 +994,8 @@
           margin-block-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+.forms-main__achievements-list--mobile {
+  background-color: #f2f2f2;
 }
 /*# sourceMappingURL=style.css.map */
