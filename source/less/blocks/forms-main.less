@@ -102,14 +102,15 @@
 }
 
 .forms-main__achievements-title--mobile {
-  padding: 38px 51px;
+  padding: 37px 51px 37px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
-.forms-main__achievements-list {
+.forms-main__achievements-list,
+.forms-main__contacts-list {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -119,6 +120,14 @@
 .forms-main__achievements-list--mobile {
   background-color: #f2f2f2;
 
+}
+
+.forms-main__achievements-item--mobile {
+  margin-bottom: 43px;
+
+  &:last-of-type {
+    margin-bottom: 42px;
+  }
 }
 
 .forms-main__achievements-subject {
@@ -148,4 +157,30 @@
   font-size: 18px;
   line-height: 30px;
   padding-left: 20px;
+  vertical-align: middle;
+}
+
+.forms-main__user-contacts {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  border: none;
+  background-color: #ffffff;
+}
+
+.forms-main__contacts-title--mobile {
+  display: none;
+}
+
+.forms-main__user-phone {
+  font-size: 14px;
+  line-height: 30px;
+  span {
+    display: inline-block;
+    padding-left: 44px;
+    margin-top: 19px;
+  }
 }
