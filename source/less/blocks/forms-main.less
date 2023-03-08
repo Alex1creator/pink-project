@@ -122,21 +122,30 @@
 }
 
 .forms-main__achievements-subject {
-
+  display: inline-block;
+  cursor: pointer;
 }
 
 .forms-main__achievements-mark {
-  display: block;
+  display: inline-block;
   width: 35px;
   height: 35px;
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   margin-left: 20px;
+  vertical-align: middle;
 }
 
 .forms-main__achievements-check:checked + .forms-main__achievements-mark {
   background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.forms-main__achievements-caption {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
 }
