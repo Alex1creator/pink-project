@@ -117,17 +117,25 @@
             путешествовали?</h2>
         </legend>
         <ul class="forms-main__application-list">
-          <li class="forms-main__application-item"><label><input type="radio" name="operating-system" checked>Pink для
-              iOS</label></li>
-          <li class="forms-main__application-item"><label><input type="radio" name="operating-system">Pink на
-              Android</label></li>
-          <li class="forms-main__application-item"><label><input type="radio" name="operating-system">Windows
-              Phone</label></li>
+          <li class="forms-main__application-item forms-main__application-item--mobile"><label><input
+                class="visually-hidden forms-main__application-check" type="radio" name="operating-system" checked><span
+                class="forms-main__application-mark"></span><span class="forms-main__application-caption">Pink для
+                iOS</span></label></li>
+          <li class="forms-main__application-item forms-main__application-item--mobile"><label><input
+                class="visually-hidden forms-main__application-check" type="radio" name="operating-system"><span
+                class="forms-main__application-mark"></span><span class="forms-main__application-caption">Pink на
+                Android</span></label></li>
+          <li class="forms-main__application-item forms-main__application-item--mobile"><label><input
+                class="visually-hidden forms-main__application-check" type="radio" name="operating-system"><span
+                class="forms-main__application-mark"></span><span class="forms-main__application-caption">Windows
+                Phone</span></label></li>
         </ul>
       </fieldset>
-      <fieldset>
-        <label class="forms-main__emotions">ОПИШИТЕ СВОИ ЭМОЦИИ<input type="text" name="emotions"
-            value="Можно прям в красках, не стесняясь в выражениях"></label>
+      <fieldset class="forms-main__user-emotions forms-main__user-emotions--mobile">
+        <label class="forms-main__emotions-title forms-main__emotions-title--mobile">ОПИШИТЕ СВОИ ЭМОЦИИ<textarea
+            class="forms-main__emotions-input forms-main__emotions-input--mobile"
+            name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </label>
       </fieldset>
       <button class="forms-main__button" type="submit">Отправить форму</button>
       <p class="forms-main__comment">* — обязательные поля</p>
@@ -136,7 +144,7 @@
   </main>
   <footer class="footer-page">
     <div class="footer-page__wrapper">
-      <a class="footer-page__logo-link" href="index.html">
+      <a class="footer-page__logo-link footer-page__logo-link--mobile" href="index.html">
         <svg class="footer-page__logo-img" xmlns="http://www.w3.org/2000/svg" width="145" height="40" fill="none">
           <path fill="#283645"
             d="M71 18.5a1.3 1.3 0 0 1 1.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 0 1-1.2 1.4 1.3 1.3 0 0 1-1.3-1.4v-20Zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79ZM92.6 18.4a1.3 1.3 0 0 1 1.3-1.4 1.3 1.3 0 0 1 1.2 1.4v20.2A1.3 1.3 0 0 1 94 40a1.3 1.3 0 0 1-1.3-1.4V18.4ZM101.7 18.4a1.3 1.3 0 0 1 1.2-1.2h.4a1.5 1.5 0 0 1 1.3.7l13.6 17.4v-17a1.2 1.2 0 0 1 1.2-1.2 1.2 1.2 0 0 1 1.2 1.3v20.3a1.2 1.2 0 0 1-.3.8 1.1 1.1 0 0 1-.8.3h-.2a1.7 1.7 0 0 1-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 0 1-1.2 1.2 1.2 1.2 0 0 1-1.2-1.2V18.4ZM127 18.4a1.3 1.3 0 0 1 1.2-1.4 1.3 1.3 0 0 1 1.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 0 1 1.2 1.3 1.3 1.3 0 0 1-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 0 1-.4.8 1.3 1.3 0 0 1-1 .4 1.2 1.2 0 0 1-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 0 1-.8 1.2 1.3 1.3 0 0 1-1.8-1.2V18.4Z" />
@@ -146,16 +154,20 @@
         </svg>
         <span class="visually-hidden">логотип-пинк.</span></a>
       <ul class="footer-page__social-list">
-        <li class="footer-page__social-item"><a href="https://twitter.com/htmlacademy_ru"><img src="img/twitter.svg"
-              alt="твиттер"></a></li>
-        <li class="footer-page__social-item"><a href="https://www.facebook.com/htmlacademy"><img src="img/facebook.svg"
-              alt="фейсбук"></a></li>
-        <li class="footer-page__social-item"><a href="https://www.youtube.com/@HTMLAcademyRUS"><img
-              src="img/youtube.svg" alt="ютюб"></a></li>
+        <li class="footer-page__social-item"><a class="footer-page__social-link"
+            href="https://twitter.com/htmlacademy_ru"><img class="footer-page__social-icon" src="img/twitter.svg"
+              width="18" height="14" alt="твиттер"></a></li>
+        <li class="footer-page__social-item"><a class="footer-page__social-link"
+            href="https://www.facebook.com/htmlacademy"><img class="footer-page__social-icon" src="img/facebook.svg"
+              width="9" height="18" alt="фейсбук"></a></li>
+        <li class="footer-page__social-item"><a class="footer-page__social-link"
+            href="https://www.youtube.com/@HTMLAcademyRUS"><img class="footer-page__social-icon" src="img/youtube.svg"
+              width="15" height="13" alt="ютюб"></a></li>
       </ul>
       <div class="designed">
-        <p class="designed__title">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><svg
-              class="designed__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
+        <p class="designed__title designed__title--mobile">Разработано<a
+            href="https://htmlacademy.ru/intensive/adaptive"><svg class="designed__icon"
+              xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
               <path fill="#D22856"
                 d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z" />
             </svg><span class="visually-hidden">логотип html
