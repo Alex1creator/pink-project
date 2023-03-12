@@ -1025,6 +1025,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.forms-main__achievements-check:hover + .forms-main__achievements-mark {
+  border: 2px solid #283645;
+}
+.forms-main__achievements-check:active + .forms-main__achievements-mark {
+  border: 2px solid #d22856;
+}
 .forms-main__achievements-caption {
   display: inline-block;
   font-weight: 400;
@@ -1162,6 +1168,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.forms-main__application-check:hover + .forms-main__application-mark {
+  border: 2px solid #283645;
+}
+.forms-main__application-check:active + .forms-main__application-mark {
+  border: 2px solid #d22856;
+}
 .forms-main__user-emotions {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
@@ -1286,6 +1298,10 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2aab6d;
+  cursor: pointer;
+}
+.modal-failure__button-wrapper--mobile {
+  text-align: center;
 }
 .modal-failure__button--mobile {
   padding: 13px 23px;
@@ -1293,15 +1309,16 @@
   border: 2px solid #2aab6d;
 }
 .modal-success {
+  display: none;
   background-color: #ffffff;
   font-family: "Open Sans", serif;
   font-weight: 700;
 }
 .modal-success--mobile {
   position: absolute;
-  top: 1166px;
+  top: 1640px;
   width: 320px;
-  padding: 31px 0 39px;
+  padding: 31px 0 0;
 }
 .modal-success__container {
   text-align: center;
@@ -1324,7 +1341,7 @@
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
-  margin-bottom: 50px;
+  margin-bottom: 41px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1338,6 +1355,14 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2aab6d;
+  cursor: pointer;
+}
+.modal-success__button-wrapper {
+  background: #f2f2f2;
+}
+.modal-success__button-wrapper--mobile {
+  text-align: center;
+  padding: 52px 0;
 }
 .modal-success__button--mobile {
   padding: 13px 23px;
