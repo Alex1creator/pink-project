@@ -164,6 +164,11 @@
   text-align: center;
   color: #ffffff;
 }
+@media (min-width: 660px) {
+  .slogan-block__title {
+    margin: 0;
+  }
+}
 .slogan-block__image {
   vertical-align: bottom;
 }
