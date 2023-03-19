@@ -152,6 +152,14 @@
   background-color: #1d2631;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .buttons-block {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    width: 340px;
+  }
+}
 .buttons-block__download-button {
   display: inline-block;
   color: #ffffff;
@@ -164,6 +172,12 @@
   line-height: 18px;
   font-weight: 700;
   margin: 29px auto;
+}
+@media (min-width: 660px) {
+  .buttons-block__download-button {
+    padding: 16px 46px;
+    margin: 29px auto 47px;
+  }
 }
 .buttons-block__link-list {
   list-style-type: none;
@@ -182,13 +196,23 @@
   font-family: "Open Sans", serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
   color: #ffffff;
   width: 280px;
   padding-top: 17px;
   padding-bottom: 32px;
   margin: 0 auto;
+}
+.buttons-block__description-buttons--style {
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 660px) {
+  .buttons-block__description-buttons--style {
+    font-size: 18px;
+    width: 300px;
+    padding-bottom: 115px;
+    padding-top: 26px;
+  }
 }
 .promo__intro {
   padding-bottom: 28px;
@@ -235,14 +259,24 @@
   font-family: "Open Sans", serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
   text-align: center;
   color: #283645;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 29px;
   background-color: #ffffff;
+}
+.promo__header--modificator {
+  font-size: 24px;
+  line-height: 29px;
+}
+@media (min-width: 660px) and (max-width: calc(1200px - 1px)) {
+  .promo__header--modificator {
+    padding-top: 47px;
+    padding-bottom: 0;
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 .promo__intro {
   font-family: "Open Sans", serif;
@@ -254,6 +288,13 @@
   color: #283645;
   margin: 0;
   background-color: #ffffff;
+}
+@media (min-width: 660px) {
+  .promo__intro--adaptive {
+    font-size: 40px;
+    line-height: 54px;
+    padding: 0 160px;
+  }
 }
 .promo__advantage-list {
   -webkit-margin-before: 0;

@@ -3,7 +3,12 @@
   background-color: #1d2631;
   text-align: center;
 
-
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    width: 340px;
+  }
 }
 
 .buttons-block__download-button {
@@ -18,7 +23,14 @@
   line-height: 18px;
   font-weight: 700;
   margin: 29px auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 46px;
+    margin: 29px auto 47px;
+  }
 }
+
+
 
 .buttons-block__link-list {
   list-style-type: none;
@@ -35,13 +47,23 @@
   font-family: "Open Sans", serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
   color: #ffffff;
   width: 280px;
   padding-top: 17px;
   padding-bottom: 32px;
   margin: 0 auto;
+}
+
+.buttons-block__description-buttons--style {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 300px;
+    padding-bottom: 115px;
+    padding-top: 26px;
+  }
 }
 
 .promo__intro {
