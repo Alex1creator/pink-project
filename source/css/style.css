@@ -47,13 +47,41 @@
   fill: #FFFFFF;
   opacity: 0.3;
 }
-.header-page__logo-text--phone {
-  margin: 22px 21px 20px 20px;
+.header-page__logo-tablet {
+  display: none;
+}
+.header-page__logo-desktop {
+  display: none;
 }
 @media (min-width: 660px) {
-  .header-page__logo-text--phone {
-    margin: 22px 21px 20px 20px;
+  .header-page__logo-text {
+    display: none;
   }
+  .header-page__logo-tablet {
+    display: inline;
+    margin: 27px 0 43px 20px;
+  }
+  .header-page__logo-tablet:hover path {
+    fill: #D22856;
+  }
+  .header-page__logo-tablet:active path {
+    fill: #FFFFFF;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 1200px) {
+  .header-page__logo-text {
+    display: none;
+  }
+  .header-page__logo-tablet {
+    display: none;
+  }
+  .header-page__logo-desktop {
+    display: inline;
+  }
+}
+.header-page__logo-text--phone {
+  margin: 22px 21px 20px 20px;
 }
 .header-page__navigation-toggle {
   background-image: url("../img/open-menu-btn.png");
@@ -165,6 +193,9 @@
 .promo__intro {
   padding-bottom: 28px;
 }
+.slogan-block {
+  position: relative;
+}
 .slogan-block__title {
   width: 280px;
   font-family: "Open Sans", serif;
@@ -185,7 +216,7 @@
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
-    margin: 0;
+    margin: 94px 0 0 46px;
   }
 }
 .slogan-block__image {
@@ -193,7 +224,11 @@
 }
 @media (min-width: 660px) {
   .slogan-block__image {
-    margin-left: 300px;
+    width: 551px;
+    height: 493px;
+    position: absolute;
+    top: -20px;
+    right: -84px;
   }
 }
 .promo__header {

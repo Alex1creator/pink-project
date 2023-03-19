@@ -1,7 +1,3 @@
-@hover-color: #D22856;
-@active-color:#FFFFFF;
-@focus-color: #00ffea;
-
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
@@ -39,7 +35,6 @@
 }
 
 .header-page__logo-text {
-
   &:hover path {
     fill: @hover-color;
   }
@@ -48,16 +43,52 @@
     fill: @active-color;
     opacity: 0.3;
   }
+}
 
+.header-page__logo-tablet {
+  display: none;
+}
 
+.header-page__logo-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-page__logo-text {
+    display: none;
+  }
+
+  .header-page__logo-tablet {
+    display: inline;
+    margin: 27px 0 43px 20px;
+
+    &:hover path {
+      fill: @hover-color;
+    }
+
+    &:active path {
+      fill: @active-color;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-page__logo-text {
+    display: none;
+  }
+
+  .header-page__logo-tablet {
+    display: none;
+  }
+
+  .header-page__logo-desktop {
+    display: inline;
+  }
 }
 
 .header-page__logo-text--phone {
   margin: 22px 21px 20px 20px;
-
-  @media (min-width: @tablet-width) {
-    margin: 22px 21px 20px 20px;
-  }
 }
 
 .header-page__navigation-toggle {
