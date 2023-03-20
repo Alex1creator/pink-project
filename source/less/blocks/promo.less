@@ -1,3 +1,7 @@
+.promo {
+  position: relative;
+}
+
 .promo__header {
   font-family: "Open Sans", serif;
   font-style: normal;
@@ -26,8 +30,6 @@
   font-family: "Open Sans", serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
   text-align: center;
   color: #283645;
   margin: 0;
@@ -35,6 +37,9 @@
 }
 
 .promo__intro--adaptive {
+  font-size: 24px;
+  line-height: 29px;
+
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54px;
@@ -48,8 +53,16 @@
   padding-inline-start: 0;
   padding-top: 86px;
   padding-bottom: 41px;
-  background: linear-gradient(174deg, #ffffff 35px, #f2f2f2 35px, #f2f2f2);
+
   list-style-type: none;
+}
+
+.promo__advantage-list--type {
+  background: linear-gradient(174deg, #ffffff 35px, #f2f2f2 35px, #f2f2f2);
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(175deg, #ffffff 88px, #f2f2f2 88px, #f2f2f2);
+  }
 }
 
 .promo__advantage-item {
@@ -58,11 +71,19 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 auto 31px;
-  text-align: center;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+.promo__advantage-item--modificator {
+  margin: 0 auto 31px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 330px;
+    text-align: left;
   }
 }
 
@@ -75,7 +96,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+
+}
+
+.promo__advantage-title--type {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__foto-list {
@@ -91,5 +120,19 @@
 
   &:not(:last-of-type) {
     display: none;
+  }
+}
+
+.promo__foto-item--main {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 245px;
+    left: 26px;
+    text-align: left;
+
+    img {
+      width: 268px;
+      height: 547px;
+    }
   }
 }
