@@ -51,18 +51,21 @@
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
-  padding-top: 86px;
+  padding-top: 74px;
   padding-bottom: 41px;
 
   list-style-type: none;
 }
 
-.promo__advantage-list--type {
+.promo__advantage-list--layout {
   background: linear-gradient(174deg, #ffffff 35px, #f2f2f2 35px, #f2f2f2);
 
   @media (min-width: @tablet-width) {
+    width: 660px;
     background: linear-gradient(175deg, #ffffff 88px, #f2f2f2 88px, #f2f2f2);
   }
+
+
 }
 
 .promo__advantage-item {
@@ -82,8 +85,14 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin: 0 330px;
+    width: 310px;
+    margin: 0 0 0 330px;
     text-align: left;
+    padding-top: 33px;
+
+    &:last-of-type {
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -96,7 +105,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-
 }
 
 .promo__advantage-title--type {
@@ -104,6 +112,7 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    margin: 0 0 12px;
   }
 }
 
