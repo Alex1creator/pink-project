@@ -24,12 +24,20 @@
 .reviews__item {
   font-family: "Open Sans", serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 30px;
   text-align: center;
 
   &:not(:first-of-type) {
     display: none;
+  }
+}
+
+.reviews__item--font {
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
