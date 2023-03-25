@@ -549,6 +549,7 @@
   .reviews__title--order {
     order: 1;
     padding-top: 37px;
+    padding-bottom: 6px;
     font-size: 20px;
   }
 }
@@ -607,12 +608,23 @@
   overflow: hidden;
   margin-bottom: 35px;
 }
+@media (min-width: 660px) {
+  .tariffs__wrapper-mobile--full {
+    width: 601px;
+    overflow: visible;
+  }
+}
 .tariffs__table {
   width: 616px;
   border-spacing: 2px;
 }
 .tariffs__table--mobile {
   margin-left: -429px;
+}
+@media (min-width: 660px) {
+  .tariffs__table--mobile {
+    margin-left: 0;
+  }
 }
 .tariffs__table-title:not(:first-of-type) {
   background-color: #283645;
@@ -639,6 +651,11 @@
   font-size: 18px;
   line-height: 30px;
 }
+@media (min-width: 660px) {
+  .tariffs__price--width {
+    width: 152px;
+  }
+}
 .tariffs__table-body {
   background: #ffffff;
 }
@@ -650,6 +667,10 @@
   display: inline-block;
   text-align: left;
   width: 147px;
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 .tariffs__row-title:nth-of-type(1) .tariffs__row--data-mobile:nth-of-type(3)::before {
   content: "РОЗОВЫЙ ФИЛЬТР";
@@ -663,6 +684,11 @@
   text-align: left;
   padding: 13px 70px 14px 0;
 }
+@media (min-width: 660px) {
+  .tariffs__row-title:nth-of-type(1) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    display: none;
+  }
+}
 .tariffs__row-title:nth-of-type(2) .tariffs__row--data-mobile:nth-of-type(3)::before {
   content: "смайлики";
   display: inline-block;
@@ -675,6 +701,11 @@
   text-align: left;
   padding: 13px 70px 14px 0;
 }
+@media (min-width: 660px) {
+  .tariffs__row-title:nth-of-type(2) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    display: none;
+  }
+}
 .tariffs__row-title:nth-of-type(3) .tariffs__row--data-mobile:nth-of-type(3)::before {
   content: "комментарии";
   display: inline-block;
@@ -686,6 +717,21 @@
   text-transform: uppercase;
   text-align: left;
   padding: 13px 70px 14px 0;
+}
+@media (min-width: 660px) {
+  .tariffs__row-title:nth-of-type(3) .tariffs__row--data-mobile:nth-of-type(3)::before {
+    display: none;
+  }
+}
+@media (min-width: 660px) {
+  .tariffs__row-features--font {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .tariffs__row-features--font {
+    font-size: 18px;
+  }
 }
 .tariffs__option-mark {
   vertical-align: middle;
