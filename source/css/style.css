@@ -686,8 +686,9 @@
 }
 @media (min-width: 660px) {
   .tariffs__row-features--font {
+    width: 124px;
     font-size: 14px;
-    text-align: center;
+    padding: 6px 11px 9px 17px;
   }
 }
 @media (min-width: 1200px) {
