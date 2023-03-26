@@ -50,8 +50,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    padding-top: 10px;
-    padding-bottom: 26px;
+
     text-transform: uppercase;
     overflow: hidden;
 
@@ -66,6 +65,8 @@
 
 
 .tariffs__table-title--padding {
+  padding-top: 10px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     padding-top: 13px;
@@ -90,23 +91,31 @@
 
 .tariffs__table-body {
   background: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
-.tariffs__row-title {
-  td {
-    padding: 0 10px;
+.tariffs__row-features {
+  display: inline-block;
+  text-align: left;
+  width: 147px;
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.tariffs__row-features--font {
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
     text-align: center;
   }
 
-  .tariffs__row-features {
-    display: inline-block;
-    text-align: left;
-    width: 147px;
-    font-family: "Open Sans", serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
+}
+
+
+.tariffs__row-title {
 
   &:nth-of-type(1) .tariffs__row--data-mobile:nth-of-type(3)::before {
     content: "РОЗОВЫЙ ФИЛЬТР";
@@ -160,13 +169,12 @@
   }
 }
 
-.tariffs__row-features--font {
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-  }
+.tariffs__row-title--padding td {
+  padding: 0 10px;
+  text-align: center;
 
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 
