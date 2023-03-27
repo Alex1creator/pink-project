@@ -8,6 +8,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 110px;
+    padding-bottom: 34px;
   }
 }
 
@@ -53,13 +54,16 @@
 
     text-transform: uppercase;
     overflow: hidden;
-
-
   }
+
   &:nth-of-type(3) {
     background-image: url("../img/hit74x74.png");
     background-repeat: no-repeat;
     background-position: top left;
+
+    @media (min-width: @tablet-width) {
+      background-position: -9px -6px;
+    }
   }
 }
 
@@ -69,6 +73,7 @@
   padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     padding-top: 13px;
     padding-bottom: 6px;
   }
@@ -86,6 +91,7 @@
 .tariffs__price--width {
   @media (min-width: @tablet-width) {
     width: 152px;
+    margin-top: -3px;
   }
 }
 
@@ -187,4 +193,8 @@
 .tariffs__toggles {
   margin: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
