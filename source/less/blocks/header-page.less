@@ -34,6 +34,12 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.header-page__wrapper--width {
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
+}
+
 .header-page__logo-text {
   &:hover path {
     fill: @hover-color;
@@ -84,6 +90,8 @@
 
   .header-page__logo-desktop {
     display: inline;
+    padding-bottom: 40px;
+
   }
 }
 
@@ -113,6 +121,10 @@
   margin: 0;
   margin-left: auto;
   border: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 
