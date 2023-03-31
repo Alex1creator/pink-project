@@ -27,6 +27,12 @@
 
 .header-page {
   width: inherit;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .header-page__wrapper {
@@ -36,8 +42,8 @@
 
 .header-page__wrapper--width {
   @media (min-width: @desktop-width) {
-    min-width: 1200px;
-    margin: 0 auto;
+    // min-width: 1200px;
+    // margin: 0 auto;
   }
 }
 
@@ -93,8 +99,8 @@
     display: inline;
     padding-bottom: 40px;
     padding-top: 27px;
-    width: 940px;
-    margin: 0 auto;
+    // width: 940px;
+    // margin: 0 auto;
   }
 }
 
@@ -144,10 +150,19 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: auto;
+  }
 }
 
 .header-page__navigation--column {
-
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .header-page__navigation-item {
