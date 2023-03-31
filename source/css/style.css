@@ -14,7 +14,7 @@
 }
 @media (min-width: 1200px) {
   .page__body {
-    min-width: 1200px;
+    width: 100%;
     background-image: url("../img/back-desktop.jpg");
   }
 }
@@ -49,6 +49,7 @@
 @media (min-width: 1200px) {
   .header-page__wrapper--width {
     min-width: 1200px;
+    margin: 0 auto;
   }
 }
 .header-page__logo-text:hover path {
@@ -90,6 +91,9 @@
   .header-page__logo-desktop {
     display: inline;
     padding-bottom: 40px;
+    padding-top: 27px;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 .header-page__logo-text--phone {
