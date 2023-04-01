@@ -151,7 +151,7 @@
 @media (min-width: 1200px) {
   .header-page__navigation-list {
     display: grid;
-    grid-template-columns: 150px 187px 150px 133px;
+    grid-template-columns: 150px 187px 145px 138px;
     justify-items: start;
     width: auto;
   }
@@ -167,6 +167,11 @@
   width: inherit;
   color: #ffffff;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .header-page__navigation-item:nth-of-type(4n) {
+    margin-left: auto;
+  }
 }
 .header-page__navigation-item a {
   display: inline-block;

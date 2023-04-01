@@ -163,7 +163,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 150px 187px 150px 133px;
+    grid-template-columns: 150px 187px 145px 138px;
     justify-items: start;
     width: auto;
   }
@@ -182,6 +182,12 @@
   width: inherit;
   color: #ffffff;
   text-align: center;
+
+  &:nth-of-type(4n) {
+    @media (min-width: @desktop-width) {
+      margin-left: auto;
+    }
+  }
 
   a {
     display: inline-block;
