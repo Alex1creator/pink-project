@@ -1,6 +1,7 @@
 .promo {
   position: relative;
-  background-color: white;
+  background-color: #ffffff;
+  display: grid;
 }
 
 .promo__header {
@@ -87,7 +88,9 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    background: linear-gradient(175deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2);
+    background: none;
+    background-color: #f2f2f2;
+    order: 2;
   }
 }
 
@@ -147,7 +150,13 @@
   background-color: #f2f2f2;
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 186px 186px 186px;
+    column-gap: 137px;
+    justify-content: center;
+    order: 1;
+    background: linear-gradient(175deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2);
+
   }
 }
 
@@ -156,9 +165,17 @@
 
   &:not(:last-of-type) {
     display: none;
+    @media (min-width: @desktop-width) {
+      display: initial;
+    }
   }
+}
 
-
+.promo__foto {
+  @media (min-width: @desktop-width) {
+    width: 186px;
+    height: 382px;
+  }
 }
 
 .promo__foto-item--main {
@@ -171,6 +188,15 @@
     img {
       width: 268px;
       height: 547px;
+
+      @media (min-width: @desktop-width) {
+        width: 186px;
+        height: 382px;
+      }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: initial;
   }
 }

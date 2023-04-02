@@ -367,7 +367,8 @@ img {
 }
 .promo {
   position: relative;
-  background-color: white;
+  background-color: #ffffff;
+  display: grid;
 }
 .promo__header {
   font-family: "Open Sans", serif;
@@ -460,7 +461,9 @@ img {
 @media (min-width: 1200px) {
   .promo__advantage-list--layout {
     width: 100%;
-    background: linear-gradient(175deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2);
+    background: none;
+    background-color: #f2f2f2;
+    order: 2;
   }
 }
 .promo__advantage-item {
@@ -521,7 +524,12 @@ img {
 }
 @media (min-width: 1200px) {
   .promo__foto-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 186px 186px 186px;
+    column-gap: 137px;
+    justify-content: center;
+    order: 1;
+    background: linear-gradient(175deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2);
   }
 }
 .promo__foto-item {
@@ -529,6 +537,17 @@ img {
 }
 .promo__foto-item:not(:last-of-type) {
   display: none;
+}
+@media (min-width: 1200px) {
+  .promo__foto-item:not(:last-of-type) {
+    display: initial;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__foto {
+    width: 186px;
+    height: 382px;
+  }
 }
 @media (min-width: 660px) {
   .promo__foto-item--main {
@@ -540,6 +559,17 @@ img {
   .promo__foto-item--main img {
     width: 268px;
     height: 547px;
+  }
+}
+@media (min-width: 660px) and (min-width: 1200px) {
+  .promo__foto-item--main img {
+    width: 186px;
+    height: 382px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__foto-item--main {
+    position: initial;
   }
 }
 .effect {
