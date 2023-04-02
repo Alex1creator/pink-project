@@ -1,5 +1,10 @@
 .slogan-block {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .slogan-block__title {
@@ -22,6 +27,13 @@
     line-height: 48px;
     margin: 94px 0 0 46px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+    margin: 102px 0 0 0;
+  }
 }
 
 .slogan-block__image {
@@ -33,5 +45,12 @@
     position: absolute;
     top: -20px;
     right: -84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 637px;
+    height: 530px;
+    top: 11px;
+    right: -79px;
   }
 }
