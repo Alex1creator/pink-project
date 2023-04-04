@@ -472,6 +472,7 @@ img {
     order: 2;
     padding-top: 0;
     padding-bottom: 0;
+    z-index: 1;
   }
 }
 .promo__advantage-item {
@@ -576,7 +577,7 @@ img {
     width: 300px;
     height: 17px;
     left: -52px;
-    top: 358px;
+    top: 341px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
     opacity: 0.3;
     filter: blur(2px);
@@ -619,7 +620,7 @@ img {
     width: 300px;
     height: 17px;
     left: -52px;
-    top: 358px;
+    top: 341px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
     opacity: 0.3;
     filter: blur(2px);
@@ -649,6 +650,11 @@ img {
     justify-content: center;
   }
 }
+@media (min-width: 1200px) {
+  .effect-wrapper {
+    padding-bottom: 67px;
+  }
+}
 .effect__watch--layout {
   margin-top: 54px;
   margin-right: 71px;
@@ -658,7 +664,8 @@ img {
     width: 298px;
     height: 345px;
     margin-top: 19px;
-    margin-right: 105px;
+    margin-right: 66px;
+    margin-left: 17px;
   }
 }
 .effect__title {
@@ -681,6 +688,7 @@ img {
 @media (min-width: 1200px) {
   .effect__title--width {
     width: 298px;
+    margin-top: 112px;
   }
 }
 .effect__description {
@@ -703,11 +711,13 @@ img {
 }
 @media (min-width: 1200px) {
   .effect__description--width {
-    width: 534px;
+    width: 554px;
     font-size: 18px;
     line-height: 30px;
-    margin-top: 37px;
-    margin-bottom: 47px;
+    margin-top: 22px;
+    margin-bottom: 29px;
+    margin-left: 3px;
+    margin-right: 31px;
   }
 }
 .effect__link {
@@ -724,6 +734,7 @@ img {
 }
 @media (min-width: 1200px) {
   .effect__link--layout {
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -738,6 +749,13 @@ img {
 @media (min-width: 660px) {
   .reviews__phone--layer {
     margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__phone--layer {
+    position: relative;
+    top: -47px;
+    width: 940px;
   }
 }
 .reviews__list {
@@ -815,6 +833,12 @@ img {
   .reviews__title-intro--font {
     display: block;
     font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 .reviews__toggles {
