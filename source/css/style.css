@@ -2087,4 +2087,21 @@ img {
   width: 276px;
   border: 2px solid #2aab6d;
 }
+@media (min-width: 1200px) {
+  .slider {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .slider::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-left: 2px solid rgba(40, 54, 69, 0.3);
+    border-bottom: 2px solid rgba(40, 54, 69, 0.3);
+    transform: rotate(45deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */
