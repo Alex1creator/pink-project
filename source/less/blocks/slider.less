@@ -1,22 +1,42 @@
 .slider {
   @media (min-width: @desktop-width) {
+    position: relative;
     width: 940px;
     margin: 0 auto;
+  }
+}
 
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      background-color: transparent;
-      border-left: 2px solid rgba(40, 54, 69, 0.3);
-      border-bottom: 2px solid rgba(40, 54, 69, 0.3);
-      transform: rotate(45deg);
-    }
+.slider__button-list {
+  display: none;
 
-    &::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+  }
+}
 
-    }
+.slider__button {
+  @media (min-width: @desktop-width) {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid rgba(40, 54, 69, 0.3);
+    border-bottom: 2px solid rgba(40, 54, 69, 0.3);
+    transform: rotate(45deg) translate(5px, -5px);
+    padding: 0;
+  }
+}
+
+.slider__button-next {
+  @media (min-width: @desktop-width) {
+    transform: rotate(225deg) translate(5px, -5px);
   }
 }

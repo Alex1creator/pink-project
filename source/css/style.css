@@ -879,6 +879,12 @@ img {
 .tariffs {
   background: linear-gradient(177deg, #ffffff 55px, #f2f2f2 55px, #f2f2f2);
 }
+@media (min-width: 1200px) {
+  .tariffs {
+    position: relative;
+    top: -47px;
+  }
+}
 .tariffs--placement {
   padding-top: 138px;
   padding-bottom: 47px;
@@ -2089,19 +2095,45 @@ img {
 }
 @media (min-width: 1200px) {
   .slider {
+    position: relative;
     width: 940px;
     margin: 0 auto;
   }
-  .slider::before {
+}
+.slider__button-list {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .slider__button-list {
     position: absolute;
-    content: "";
-    display: block;
+    top: 220px;
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    list-style-type: none;
+  }
+}
+@media (min-width: 1200px) {
+  .slider__button {
     width: 30px;
     height: 30px;
     background-color: transparent;
+    border: none;
     border-left: 2px solid rgba(40, 54, 69, 0.3);
     border-bottom: 2px solid rgba(40, 54, 69, 0.3);
-    transform: rotate(45deg);
+    transform: rotate(45deg) translate(5px, -5px);
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .slider__button-next {
+    transform: rotate(225deg) translate(5px, -5px);
   }
 }
 /*# sourceMappingURL=style.css.map */
