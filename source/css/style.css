@@ -854,12 +854,6 @@ img {
     font-size: 18px;
   }
 }
-@media (min-width: 1200px) {
-  .slider {
-    width: 940px;
-    margin: 0 auto;
-  }
-}
 .reviews__toggles {
   margin: 0;
   text-align: center;

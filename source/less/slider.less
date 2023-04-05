@@ -1,0 +1,20 @@
+.slider {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+      transform: rotate(90deg);
+    }
+
+    &::after {
+
+    }
+  }
+}
