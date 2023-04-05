@@ -533,7 +533,7 @@ img {
 }
 @media (min-width: 1200px) {
   .promo__advantage-title--type {
-    width: 252px;
+    width: 240px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -773,6 +773,15 @@ img {
     padding-top: 99px;
   }
 }
+@media (min-width: 1200px) {
+  .reviews__list-placement {
+    width: inherit;
+    padding: 187px 0 0 0;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top 24% center;
+  }
+}
 .reviews__item {
   font-family: "Open Sans", serif;
   font-weight: 400;
@@ -791,6 +800,12 @@ img {
     flex-direction: column;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__item--font {
+    width: 688px;
+    margin: 0 auto;
   }
 }
 .reviews__title {
@@ -813,6 +828,11 @@ img {
     padding-top: 37px;
     padding-bottom: 6px;
     font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__title--order {
+    font-size: 24px;
   }
 }
 .reviews__title-intro {
