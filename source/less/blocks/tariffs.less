@@ -3,7 +3,8 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    top: -47px;
+    top: -48px;
+    background: linear-gradient(175deg, #ffffff 130px, #f2f2f2 130px, #f2f2f2);
   }
 }
 
@@ -46,6 +47,11 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding-top: 54px;
+  }
 }
 
 .tariffs__table-title {
@@ -56,9 +62,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-
     text-transform: uppercase;
     overflow: hidden;
+
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+    }
   }
 
   &:nth-of-type(3) {
@@ -70,6 +79,8 @@
       background-position: -9px -6px;
     }
   }
+
+
 }
 
 
@@ -98,6 +109,10 @@
     width: 152px;
     margin-top: -3px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariffs__table-body {
@@ -123,6 +138,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 152px;
     font-size: 18px;
   }
 }
@@ -186,6 +202,13 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:first-of-type {
+      width: 232px;
+      text-align: left;
+    }
   }
 }
 

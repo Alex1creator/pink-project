@@ -16,6 +16,7 @@
   .page__body {
     width: 100%;
     background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
   }
 }
 img {
@@ -882,7 +883,8 @@ img {
 @media (min-width: 1200px) {
   .tariffs {
     position: relative;
-    top: -47px;
+    top: -48px;
+    background: linear-gradient(175deg, #ffffff 130px, #f2f2f2 130px, #f2f2f2);
   }
 }
 .tariffs--placement {
@@ -922,6 +924,12 @@ img {
     margin: 0 auto;
   }
 }
+@media (min-width: 1200px) {
+  .tariffs__table--mobile {
+    width: 940px;
+    padding-top: 54px;
+  }
+}
 .tariffs__table-title:not(:first-of-type) {
   background-color: #283645;
   color: #ffffff;
@@ -931,6 +939,11 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .tariffs__table-title:not(:first-of-type) {
+    font-size: 18px;
+  }
 }
 .tariffs__table-title:nth-of-type(3) {
   background-image: url("../img/hit74x74.png");
@@ -967,6 +980,11 @@ img {
     margin-top: -3px;
   }
 }
+@media (min-width: 1200px) {
+  .tariffs__price--width {
+    font-size: 24px;
+  }
+}
 .tariffs__table-body {
   background: #ffffff;
   border: 2px solid #e5e5e5;
@@ -989,6 +1007,7 @@ img {
 }
 @media (min-width: 1200px) {
   .tariffs__row-features--font {
+    width: 152px;
     font-size: 18px;
   }
 }
@@ -1050,6 +1069,12 @@ img {
 @media (min-width: 660px) {
   .tariffs__row-title--padding td {
     padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .tariffs__row-title--padding td:first-of-type {
+    width: 232px;
+    text-align: left;
   }
 }
 .tariffs__option-mark {
