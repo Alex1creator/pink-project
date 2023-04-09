@@ -2,6 +2,10 @@
   background-color: #ffffff;
   padding-top: 39px;
   padding-bottom: 40px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 88px;
+  }
 }
 
 .footer-page-padding {
@@ -10,11 +14,22 @@
   @media (min-width: @tablet-width) {
     padding-top: 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -48px;
+    padding-top: 67px;
+  }
 }
 
 .footer-page__wrapper--placement {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -25,6 +40,10 @@
 
   @media (min-width: @tablet-width) {
     width: 183px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
@@ -92,6 +111,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 8px;
     padding-left: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: right;
   }
 }
 
