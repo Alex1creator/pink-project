@@ -1708,6 +1708,19 @@ img {
   background-position: top center;
   background-color: #f4a460;
 }
+@media (min-width: 660px) {
+  .forms-page__body {
+    width: 660px;
+    background-image: url(../img/back_tablet.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .forms-page__body {
+    width: 100%;
+    background-image: url(../img/back-desktop.jpg);
+    background-size: cover;
+  }
+}
 .forms-main__title {
   text-align: center;
   font-weight: 300;
@@ -1725,9 +1738,27 @@ img {
   padding-top: 28px;
   padding-bottom: 45px;
 }
+@media (min-width: 660px) {
+  .forms-main__title--mobile {
+    width: 620px;
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 67px;
+    padding-bottom: 59px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__title--mobile {
+    width: 747px;
+  }
+}
 .forms-main__intro {
   margin: 0;
   background-color: #ffffff;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 .forms-main__intro--mobile {
   width: 280px;
@@ -1735,6 +1766,14 @@ img {
   line-height: 30px;
   padding: 44px 20px 15px;
   text-align: center;
+}
+@media (min-width: 660px) {
+  .forms-main__intro--mobile {
+    width: 490px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 91px 85px 72px;
+  }
 }
 .forms-main__form {
   width: inherit;

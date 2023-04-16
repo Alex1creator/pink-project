@@ -13,11 +13,25 @@
   line-height: 33px;
   padding-top: 28px;
   padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 67px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 747px;
+  }
 }
 
 .forms-main__intro {
   margin: 0;
   background-color: #ffffff;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .forms-main__intro--mobile {
@@ -26,6 +40,17 @@
   line-height: 30px;
   padding: 44px 20px 15px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 91px 85px 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__form {

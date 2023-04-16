@@ -8,4 +8,15 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #f4a460;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    background-image: url(../img/back_tablet.jpg);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    background-image: url(../img/back-desktop.jpg);
+    background-size: cover;
+  }
 }
