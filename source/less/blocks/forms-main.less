@@ -1,3 +1,9 @@
+.forms-main__contest {
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
 .forms-main__title {
   text-align: center;
   font-weight: 300;
@@ -24,6 +30,26 @@
 
   @media (min-width: @desktop-width) {
     width: 747px;
+    padding-bottom: 84px;
+  }
+}
+
+.forms-main__fill-forms {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
 
@@ -45,11 +71,12 @@
     width: 490px;
     margin: 0 auto;
     font-size: 18px;
-    padding: 91px 85px 72px;
+    padding: 91px 85px 0;
   }
 
   @media (min-width: @desktop-width) {
-
+    width: 757px;
+    padding: 91px 0 0;
   }
 }
 
