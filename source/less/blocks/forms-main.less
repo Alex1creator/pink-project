@@ -83,6 +83,10 @@
 .forms-main__form {
   width: inherit;
   margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+  }
 }
 
 .forms-main__form-name {
@@ -95,6 +99,14 @@
   border: none;
   background-color: #ffffff;
   padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__list-name {
@@ -118,13 +130,40 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    width: 484px;
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__form-field--mobile {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 640px;
+  }
+
   & span {
     display: inline-block;
     padding-left: 44px;
     margin-top: 19px;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+      flex-grow: 1;
+      padding-left: 21px;
+      padding-right: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+
+    }
   }
 }
 
@@ -137,6 +176,14 @@
   padding-block-end: 0;
   border: none;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 
   & legend {
     padding-inline-start: 0;
@@ -233,6 +280,14 @@
   padding-block-end: 0;
   border: none;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__contacts-item--mobile {
@@ -293,6 +348,14 @@
   padding-block-end: 0;
   border: none;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 
   & legend {
     padding-inline-start: 0;
@@ -376,6 +439,14 @@
 
 .forms-main__user-emotions--mobile {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__emotions-title {
@@ -413,6 +484,14 @@
   background-color: #ffffff;
   text-align: center;
   padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__button {
