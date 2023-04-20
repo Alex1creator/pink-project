@@ -1816,6 +1816,7 @@ img {
 @media (min-width: 660px) {
   .forms-main__form {
     display: grid;
+    background: #ffffff;
   }
 }
 .forms-main__form-name {
@@ -1838,6 +1839,7 @@ img {
 @media (min-width: 660px) {
   .forms-main__form-name {
     padding-top: 69px;
+    padding-bottom: 18px;
   }
 }
 .forms-main__list-name {
@@ -1848,6 +1850,11 @@ img {
           margin-block-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+@media (min-width: 660px) {
+  .forms-main__list-item:last-of-type .forms-main__field-name {
+    margin: 0 0 0;
+  }
 }
 .forms-main__form-field {
   font-size: 14px;
@@ -1866,6 +1873,7 @@ img {
 @media (min-width: 660px) {
   .forms-main__field-name {
     display: inline;
+    flex-grow: 1;
     width: 484px;
     margin: 0 0 54px;
   }
@@ -1885,7 +1893,6 @@ img {
 @media (min-width: 660px) {
   .forms-main__form-field--mobile span {
     display: inline;
-    flex-grow: 1;
     padding-left: 21px;
     padding-right: 18px;
   }
@@ -2066,7 +2073,15 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__application {
+    width: 616px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
     order: 1;
+    border-radius: 1px;
+  }
+  .forms-main__application legend {
+    text-align: center;
   }
 }
 .forms-main__application legend {
@@ -2092,6 +2107,11 @@ img {
   padding: 37px 51px 37px;
   text-transform: uppercase;
 }
+@media (min-width: 660px) {
+  .forms-main__application-title--mobile {
+    padding: 41px 27px 42px;
+  }
+}
 .forms-main__application-list {
   list-style-type: none;
   -webkit-margin-before: 0;
@@ -2100,6 +2120,12 @@ img {
           margin-block-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+@media (min-width: 660px) {
+  .forms-main__application-list {
+    padding-left: 40px;
+    padding-bottom: 22px;
+  }
 }
 .forms-main__application-mark {
   display: inline-block;
@@ -2118,6 +2144,11 @@ img {
   line-height: 30px;
   padding-left: 29px;
   vertical-align: middle;
+}
+@media (min-width: 660px) {
+  .forms-main__application-caption {
+    padding-left: 19px;
+  }
 }
 .forms-main__application-item--mobile {
   margin-bottom: 33px;
