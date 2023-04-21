@@ -2050,6 +2050,8 @@ img {
 }
 .forms-main__user-phone {
   display: grid;
+  grid-template-columns: 441px 60px;
+  justify-content: center;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -2081,7 +2083,7 @@ img {
   }
 }
 .forms-main__phone-input {
-  display: block;
+  display: inline-block;
   width: 240px;
   margin: 5px auto 0;
   padding: 14px 16px 14px 21px;
@@ -2090,8 +2092,25 @@ img {
   line-height: 30px;
 }
 @media (min-width: 660px) {
-  .forms-main__phone-input::after {
-    display: block;
+  .forms-main__phone-input {
+    width: 433px;
+    margin: 0;
+    padding: 14px 16px 12px 21px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+  }
+}
+@media (min-width: 660px) {
+  .forms-main__phone-icon {
+    display: inline;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    line-height: 0;
+  }
+  .forms-main__phone-icon::after {
+    display: inline-block;
     content: "";
     width: 59px;
     height: 59px;
@@ -2117,7 +2136,7 @@ img {
     width: 59px;
     height: 59px;
     background: #e5e5e5;
-    background-image: url("/img/phone_icon.png");
+    background-image: url("/img/mail_icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
