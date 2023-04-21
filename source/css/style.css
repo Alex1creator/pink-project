@@ -2013,7 +2013,15 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__user-contacts {
+    width: 616px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
     order: 2;
+  }
+  .forms-main__user-contacts legend {
+    text-align: center;
   }
 }
 .forms-main__contacts-item--mobile:first-of-type {
@@ -2025,7 +2033,23 @@ img {
 .forms-main__contacts-title--mobile {
   display: none;
 }
+@media (min-width: 660px) {
+  .forms-main__contacts-title--mobile {
+    display: block;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    font-weight: 400;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 0 29px;
+  }
+}
 .forms-main__user-phone {
+  display: grid;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -2035,7 +2059,13 @@ img {
   padding-left: 44px;
   margin-top: 19px;
 }
+@media (min-width: 660px) {
+  .forms-main__user-phone span {
+    order: 1;
+  }
+}
 .forms-main__user-address {
+  display: grid;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -2045,7 +2075,32 @@ img {
   padding-left: 44px;
   margin-top: 19px;
 }
-.forms-main__phone-input,
+@media (min-width: 660px) {
+  .forms-main__user-address span {
+    order: 1;
+  }
+}
+.forms-main__phone-input {
+  display: block;
+  width: 240px;
+  margin: 5px auto 0;
+  padding: 14px 16px 14px 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (min-width: 660px) {
+  .forms-main__phone-input::after {
+    display: block;
+    content: "";
+    width: 59px;
+    height: 59px;
+    background: #e5e5e5;
+    background-image: url("/img/phone_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .forms-main__address-input {
   display: block;
   width: 240px;
@@ -2054,6 +2109,18 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+@media (min-width: 660px) {
+  .forms-main__address-input::after {
+    display: block;
+    content: "";
+    width: 59px;
+    height: 59px;
+    background: #e5e5e5;
+    background-image: url("/img/phone_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .forms-main__application {
   -webkit-margin-start: 0;
@@ -2079,6 +2146,7 @@ img {
     border: 2px solid #e5e5e5;
     order: 1;
     border-radius: 1px;
+    margin-bottom: 53px;
   }
   .forms-main__application legend {
     text-align: center;
@@ -2109,6 +2177,7 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__application-title--mobile {
+    background: #ffffff;
     padding: 41px 27px 42px;
   }
 }

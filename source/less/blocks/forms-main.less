@@ -296,7 +296,16 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    width: 616px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
     order: 2;
+
+    & legend {
+      text-align: center;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -316,9 +325,26 @@
 
 .forms-main__contacts-title--mobile {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 400;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 0 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .forms-main__user-phone {
+  display: grid;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -327,10 +353,15 @@
     display: inline-block;
     padding-left: 44px;
     margin-top: 19px;
+
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
   }
 }
 
 .forms-main__user-address {
+  display: grid;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
@@ -339,10 +370,36 @@
     display: inline-block;
     padding-left: 44px;
     margin-top: 19px;
+
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
   }
 }
 
-.forms-main__phone-input,
+.forms-main__phone-input {
+  display: block;
+  width: 240px;
+  margin: 5px auto 0;
+  padding: 14px 16px 14px 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      display: block;
+      content: "";
+      width: 59px;
+      height: 59px;
+      background: #e5e5e5;
+      background-image: url("/img/phone_icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
 .forms-main__address-input {
   display: block;
   width: 240px;
@@ -351,6 +408,19 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      display: block;
+      content: "";
+      width: 59px;
+      height: 59px;
+      background: #e5e5e5;
+      background-image: url("/img/phone_icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 .forms-main__application {
@@ -370,6 +440,7 @@
     border: 2px solid #e5e5e5;
     order: 1;
     border-radius: 1px;
+    margin-bottom: 53px;
 
     & legend {
       text-align: center;
@@ -403,6 +474,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    background: #ffffff;
     padding: 41px 27px 42px;
   }
 
