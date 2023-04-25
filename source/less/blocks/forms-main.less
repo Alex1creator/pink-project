@@ -315,11 +315,13 @@
 
 .forms-main__contacts-item--mobile {
   &:first-of-type {
-    padding-top: 15px;
+    padding-top: 31px;
+    padding-bottom: 26px;
   }
 
   &:last-of-type {
-    padding-bottom: 42px;
+    padding-top: 3px;
+    padding-bottom: 26px;
   }
 }
 
@@ -358,6 +360,8 @@
 
     @media (min-width: @tablet-width) {
       order: 1;
+      padding-left: 19px;
+      margin-top: 13px;
     }
   }
 }
@@ -368,6 +372,11 @@
   line-height: 30px;
   color: #d22856;
 
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    grid-template-columns: 441px 60px;
+  }
+
   span {
     display: inline-block;
     padding-left: 44px;
@@ -375,6 +384,8 @@
 
     @media (min-width: @tablet-width) {
       order: 1;
+      padding-left: 19px;
+      margin-top: 13px;
     }
   }
 }
@@ -389,10 +400,10 @@
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
-    width: 433px;
+    width: 400px;
     margin: 0;
     padding: 14px 16px 12px 21px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 }
@@ -427,8 +438,23 @@
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
+    width: 400px;
+    margin: 0;
+    padding: 14px 16px 12px 21px;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.forms-main__email-icon {
+  @media (min-width: @tablet-width) {
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 0;
+
     &::after {
-      display: block;
+      display: inline-block;
       content: "";
       width: 59px;
       height: 59px;
