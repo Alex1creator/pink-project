@@ -2091,11 +2091,15 @@ img {
 }
 .forms-main__user-phone {
   display: grid;
-  grid-template-columns: 441px 60px;
-  justify-content: center;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
+}
+@media (min-width: 660px) {
+  .forms-main__user-phone {
+    grid-template-columns: 441px 60px;
+    justify-content: center;
+  }
 }
 .forms-main__user-phone span {
   display: inline-block;
@@ -2341,8 +2345,10 @@ img {
 @media (min-width: 660px) {
   .forms-main__user-emotions--mobile {
     width: 616px;
-    margin: 0 auto;
+    margin: 0 auto 118px;
+    background: #ffffff;
     border: 2px solid #e5e5e5;
+    border-radius: 1px;
     order: 4;
   }
 }
@@ -2354,13 +2360,32 @@ img {
 .forms-main__emotions-title--mobile {
   display: inline-block;
   text-align: center;
-  padding: 44px 20px 44px;
+  width: 100%;
+  padding: 44px 0 44px;
   line-height: 18px;
+  background-color: #ffffff;
 }
 @media (min-width: 660px) {
   .forms-main__emotions-title--mobile {
     display: grid;
     justify-content: center;
+    width: 240px;
+    padding: 6px 0 10px;
+  }
+}
+.forms-main__emotions-header {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+@media (min-width: 660px) {
+  .forms-main__emotions-header {
+    padding: 10px 0;
   }
 }
 .forms-main__emotions-input {
@@ -2378,6 +2403,11 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   box-sizing: border-box;
+}
+@media (min-width: 660px) {
+  .forms-main__emotions-input--mobile {
+    width: 496px;
+  }
 }
 .forms-main__button-wrapper--mobile {
   background-color: #ffffff;
