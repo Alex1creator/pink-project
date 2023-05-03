@@ -2350,6 +2350,7 @@ img {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: 4;
+    text-align: center;
   }
 }
 .forms-main__emotions-title {
@@ -2367,10 +2368,8 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__emotions-title--mobile {
-    display: grid;
-    justify-content: center;
     width: 240px;
-    padding: 6px 0 10px;
+    padding: 6px 0 19px;
   }
 }
 .forms-main__emotions-header {
@@ -2382,11 +2381,6 @@ img {
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
-}
-@media (min-width: 660px) {
-  .forms-main__emotions-header {
-    padding: 10px 0;
-  }
 }
 .forms-main__emotions-input {
   font-family: inherit;
@@ -2407,6 +2401,8 @@ img {
 @media (min-width: 660px) {
   .forms-main__emotions-input--mobile {
     width: 496px;
+    height: 194px;
+    margin-bottom: 45px;
   }
 }
 .forms-main__button-wrapper--mobile {
