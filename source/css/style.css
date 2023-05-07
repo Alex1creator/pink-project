@@ -2345,7 +2345,7 @@ img {
 @media (min-width: 660px) {
   .forms-main__user-emotions--mobile {
     width: 616px;
-    margin: 0 auto 118px;
+    margin: 0 auto 65px;
     background: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
@@ -2369,7 +2369,8 @@ img {
 @media (min-width: 660px) {
   .forms-main__emotions-title--mobile {
     width: 240px;
-    padding: 6px 0 19px;
+    padding: 6px 0 6px;
+    margin-bottom: 14px;
   }
 }
 .forms-main__emotions-header {
@@ -2400,7 +2401,7 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__emotions-input--mobile {
-    width: 496px;
+    width: 500px;
     height: 194px;
     margin-bottom: 45px;
   }
@@ -2412,6 +2413,10 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__button-wrapper--mobile {
+    display: flex;
+    width: 616px;
+    justify-content: space-between;
+    margin: 0 auto;
     order: 5;
   }
 }
@@ -2429,6 +2434,12 @@ img {
   padding: 16px 47px;
   margin: 0 auto 35px;
 }
+@media (min-width: 660px) {
+  .forms-main__button--mobile {
+    padding: 16px 57px;
+    margin: 0;
+  }
+}
 .forms-main__comment {
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -2441,6 +2452,11 @@ img {
 }
 .forms-main__comment span {
   color: #d22856;
+}
+@media (min-width: 660px) {
+  .forms-main__comment {
+    padding-top: 17px;
+  }
 }
 .modal-failure {
   display: none;

@@ -642,7 +642,7 @@
 
   @media (min-width: @tablet-width) {
     width: 616px;
-    margin: 0 auto 118px;
+    margin: 0 auto 65px;
     background: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
@@ -671,7 +671,8 @@
 
   @media (min-width: @tablet-width) {
     width: 240px;
-    padding: 6px 0 19px;
+    padding: 6px 0 6px;
+    margin-bottom: 14px;
   }
 }
 
@@ -706,7 +707,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 496px;
+    width: 500px;
     height: 194px;
     margin-bottom: 45px;
   }
@@ -718,6 +719,10 @@
   padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    width: 616px;
+    justify-content: space-between;
+    margin: 0 auto;
     order: 5;
   }
 
@@ -740,6 +745,11 @@
 .forms-main__button--mobile {
   padding: 16px 47px;
   margin: 0 auto 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 57px;
+    margin: 0;
+  }
 }
 
 .forms-main__comment {
@@ -752,5 +762,9 @@
 
   span {
     color: #d22856;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 17px;
   }
 }
