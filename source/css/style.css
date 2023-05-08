@@ -1278,7 +1278,7 @@ img {
 @media (min-width: 1200px) {
   .footer-page-padding {
     position: relative;
-    top: -48px;
+    top: 5px;
     padding-top: 67px;
   }
 }
@@ -1819,6 +1819,13 @@ img {
     background: #ffffff;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__form {
+    padding: 18px 0 0 109px;
+    grid-template-columns: 130px 507px 431px;
+    grid-template-areas: "gap name app" "gap contact contact" "gap option option" "gap emotion emotion" "gap btn btn";
+  }
+}
 .forms-main__form-name {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
@@ -1840,6 +1847,11 @@ img {
   .forms-main__form-name {
     padding-top: 69px;
     padding-bottom: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__form-name {
+    grid-area: name;
   }
 }
 .forms-main__list-name {
@@ -1897,6 +1909,16 @@ img {
     padding-right: 18px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__form-field--mobile span {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__form-field--mobile {
+    width: 455px;
+  }
+}
 .forms-main__options {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
@@ -1921,6 +1943,11 @@ img {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__options {
+    grid-area: option;
   }
 }
 .forms-main__options legend {
@@ -2061,6 +2088,11 @@ img {
   }
   .forms-main__user-contacts legend {
     text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__user-contacts {
+    grid-area: contact;
   }
 }
 .forms-main__contacts-item--mobile:first-of-type {
@@ -2243,6 +2275,11 @@ img {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__application {
+    grid-area: app;
+  }
+}
 .forms-main__application legend {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -2353,6 +2390,11 @@ img {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__user-emotions--mobile {
+    grid-area: emotion;
+  }
+}
 .forms-main__emotions-title {
   font-weight: 400;
   font-size: 14px;
@@ -2419,6 +2461,11 @@ img {
     margin: 0 auto;
     padding-bottom: 0;
     order: 5;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__button-wrapper--mobile {
+    grid-area: btn;
   }
 }
 .forms-main__button {
@@ -2539,7 +2586,7 @@ img {
   border: 2px solid #2aab6d;
 }
 .modal-success {
-  display: block;
+  display: none;
   background-color: #ffffff;
   font-family: "Open Sans", serif;
   font-weight: 700;

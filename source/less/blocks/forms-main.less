@@ -88,6 +88,17 @@
     display: grid;
     background: #ffffff;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 0 0 109px;
+    grid-template-columns: 130px 507px 431px;
+    grid-template-areas:
+      "gap name app"
+      "gap contact contact"
+      "gap option option"
+      "gap emotion emotion"
+      "gap btn btn";
+  }
 }
 
 .forms-main__form-name {
@@ -107,7 +118,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: name;
   }
 }
 
@@ -176,8 +187,12 @@
     }
 
     @media (min-width: @desktop-width) {
-
+      padding-right: 20px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 455px;
   }
 }
 
@@ -201,7 +216,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: option;
   }
 
   & legend {
@@ -342,7 +357,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: contact;
   }
 }
 
@@ -528,7 +543,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: app;
   }
 
   & legend {
@@ -651,7 +666,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: emotion;
   }
 }
 
@@ -728,7 +743,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    grid-area: btn;
   }
 }
 
