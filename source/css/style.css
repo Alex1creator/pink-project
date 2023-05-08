@@ -1272,7 +1272,7 @@ img {
 }
 @media (min-width: 660px) {
   .footer-page-padding {
-    padding-top: 37px;
+    padding-top: 85px;
   }
 }
 @media (min-width: 1200px) {
@@ -2417,6 +2417,7 @@ img {
     width: 616px;
     justify-content: space-between;
     margin: 0 auto;
+    padding-bottom: 0;
     order: 5;
   }
 }
