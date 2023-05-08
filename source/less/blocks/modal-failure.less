@@ -10,6 +10,15 @@
   top: 1166px;
   width: 320px;
   padding: 31px 0 39px;
+
+  @media (min-width: @tablet-width) {
+    top: 906px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 460px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 1px 10px 1px  #e5e5e5;
+  }
 }
 
 .modal-failure__container {
@@ -27,6 +36,11 @@
   margin-bottom: 37px;
   font-size: 18px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal-failure__text {
@@ -36,6 +50,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .modal-failure__button {
