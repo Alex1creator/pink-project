@@ -90,7 +90,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 18px 0 0 109px;
+    padding: 18px 0 0 0;
     grid-template-columns: 130px 507px 431px;
     grid-template-areas:
       "gap name app"
@@ -113,7 +113,7 @@
   padding-bottom: 44px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 69px;
+    padding-top: 68px;
     padding-bottom: 18px;
   }
 
@@ -164,7 +164,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    width: 314px;
   }
 }
 
@@ -188,6 +188,7 @@
 
     @media (min-width: @desktop-width) {
       padding-right: 20px;
+      padding-left: 0;
     }
   }
 
@@ -261,12 +262,24 @@
   }
 }
 
-.forms-main__achievements-list,
+.forms-main__achievements-list {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
 .forms-main__contacts-list {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 816px;
+
+  }
 }
 
 .forms-main__achievements-list--mobile {
@@ -358,6 +371,7 @@
 
   @media (min-width: @desktop-width) {
     grid-area: contact;
+    width: 936px;
   }
 }
 
@@ -416,6 +430,10 @@
       margin-top: 13px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 311px 60px;
+  }
 }
 
 .forms-main__user-address {
@@ -440,6 +458,10 @@
       margin-top: 13px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 311px 60px;
+  }
 }
 
 .forms-main__phone-input {
@@ -457,6 +479,10 @@
     padding: 14px 16px 12px 21px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 276px;
   }
 }
 
@@ -495,6 +521,10 @@
     padding: 14px 16px 12px 21px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 276px;
   }
 }
 
@@ -544,6 +574,7 @@
 
   @media (min-width: @desktop-width) {
     grid-area: app;
+    width: 431px;
   }
 
   & legend {
@@ -574,7 +605,8 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    width: 331px;
+    padding-top: 57px;
   }
 }
 
@@ -590,7 +622,8 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    padding-left: 50px;
+    width: 260px;
   }
 }
 

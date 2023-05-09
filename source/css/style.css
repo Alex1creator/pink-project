@@ -17,6 +17,7 @@
     width: 100%;
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
+    max-height: 2056px;
   }
 }
 img {
@@ -1278,7 +1279,7 @@ img {
 @media (min-width: 1200px) {
   .footer-page-padding {
     position: relative;
-    top: 5px;
+    top: -48px;
     padding-top: 67px;
   }
 }
@@ -1719,6 +1720,7 @@ img {
     width: 100%;
     background-image: url(../img/back-desktop.jpg);
     background-size: cover;
+    max-height: 2056px;
   }
 }
 @media (min-width: 660px) {
@@ -1821,7 +1823,7 @@ img {
 }
 @media (min-width: 1200px) {
   .forms-main__form {
-    padding: 18px 0 0 109px;
+    padding: 18px 0 0 0;
     grid-template-columns: 130px 507px 431px;
     grid-template-areas: "gap name app" "gap contact contact" "gap option option" "gap emotion emotion" "gap btn btn";
   }
@@ -1845,7 +1847,7 @@ img {
 }
 @media (min-width: 660px) {
   .forms-main__form-name {
-    padding-top: 69px;
+    padding-top: 68px;
     padding-bottom: 18px;
   }
 }
@@ -1890,6 +1892,11 @@ img {
     margin: 0 0 54px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__field-name {
+    width: 314px;
+  }
+}
 @media (min-width: 660px) {
   .forms-main__form-field--mobile {
     display: flex;
@@ -1912,6 +1919,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__form-field--mobile span {
     padding-right: 20px;
+    padding-left: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1996,7 +2004,15 @@ img {
     background-color: #ffffff;
   }
 }
-.forms-main__achievements-list,
+.forms-main__achievements-list {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
 .forms-main__contacts-list {
   list-style-type: none;
   -webkit-margin-before: 0;
@@ -2005,6 +2021,12 @@ img {
           margin-block-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+@media (min-width: 1200px) {
+  .forms-main__contacts-list {
+    display: flex;
+    width: 816px;
+  }
 }
 .forms-main__achievements-list--mobile {
   background-color: #f2f2f2;
@@ -2093,6 +2115,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__user-contacts {
     grid-area: contact;
+    width: 936px;
   }
 }
 .forms-main__contacts-item--mobile:first-of-type {
@@ -2145,6 +2168,11 @@ img {
     margin-top: 13px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__user-phone {
+    grid-template-columns: 311px 60px;
+  }
+}
 .forms-main__user-address {
   display: grid;
   font-size: 14px;
@@ -2169,6 +2197,11 @@ img {
     margin-top: 13px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__user-address {
+    grid-template-columns: 311px 60px;
+  }
+}
 .forms-main__phone-input {
   display: inline-block;
   width: 240px;
@@ -2185,6 +2218,11 @@ img {
     padding: 14px 16px 12px 21px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__phone-input {
+    width: 276px;
   }
 }
 @media (min-width: 660px) {
@@ -2223,6 +2261,11 @@ img {
     padding: 14px 16px 12px 21px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__address-input {
+    width: 276px;
   }
 }
 @media (min-width: 660px) {
@@ -2278,6 +2321,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__application {
     grid-area: app;
+    width: 431px;
   }
 }
 .forms-main__application legend {
@@ -2309,6 +2353,12 @@ img {
     padding: 41px 27px 42px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__application-title--mobile {
+    width: 331px;
+    padding-top: 57px;
+  }
+}
 .forms-main__application-list {
   list-style-type: none;
   -webkit-margin-before: 0;
@@ -2322,6 +2372,12 @@ img {
   .forms-main__application-list {
     padding-left: 40px;
     padding-bottom: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__application-list {
+    padding-left: 50px;
+    width: 260px;
   }
 }
 .forms-main__application-mark {
