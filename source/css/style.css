@@ -1956,6 +1956,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__options {
     grid-area: option;
+    width: 936px;
   }
 }
 .forms-main__options legend {
@@ -2025,7 +2026,10 @@ img {
 @media (min-width: 1200px) {
   .forms-main__contacts-list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 816px;
+    margin: 0 auto;
   }
 }
 .forms-main__achievements-list--mobile {
@@ -2038,6 +2042,13 @@ img {
     background-color: #ffffff;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__achievements-list--mobile {
+    display: grid;
+    grid-template-columns: 315px 296px 209px;
+    width: 820px;
+  }
+}
 .forms-main__achievements-item--mobile {
   margin-bottom: 43px;
 }
@@ -2048,6 +2059,16 @@ img {
 @media (min-width: 660px) {
   .forms-main__achievements-item--mobile:last-of-type {
     margin-bottom: 6px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__achievements-item--mobile:last-of-type {
+    margin-bottom: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  .forms-main__achievements-item--mobile {
+    margin-bottom: 13px;
   }
 }
 .forms-main__achievements-subject {
@@ -2064,6 +2085,11 @@ img {
   margin-left: 20px;
   vertical-align: middle;
 }
+@media (min-width: 1200px) {
+  .forms-main__achievements-mark {
+    margin-left: 0;
+  }
+}
 .forms-main__achievements-check:checked + .forms-main__achievements-mark {
   background-image: url("../img/tick.svg");
   background-position: center;
@@ -2076,7 +2102,7 @@ img {
   border: 2px solid #d22856;
 }
 .forms-main__achievements-caption {
-  display: inline-block;
+  display: inline;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -2122,9 +2148,20 @@ img {
   padding-top: 31px;
   padding-bottom: 26px;
 }
+@media (min-width: 1200px) {
+  .forms-main__contacts-item--mobile:first-of-type {
+    padding-bottom: 10px;
+  }
+}
 .forms-main__contacts-item--mobile:last-of-type {
   padding-top: 3px;
   padding-bottom: 26px;
+}
+@media (min-width: 1200px) {
+  .forms-main__contacts-item--mobile:last-of-type {
+    padding-top: 31px;
+    padding-bottom: 10px;
+  }
 }
 .forms-main__contacts-title--mobile {
   display: none;
