@@ -1265,6 +1265,7 @@ img {
 }
 @media (min-width: 1200px) {
   .footer-page {
+    padding-top: 73px;
     padding-bottom: 88px;
   }
 }
@@ -1373,6 +1374,7 @@ img {
 @media (min-width: 1200px) {
   .designed__title--mobile {
     text-align: right;
+    font-size: 18px;
   }
 }
 .designed__icon:hover path {
@@ -1808,7 +1810,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__intro--mobile {
     width: 757px;
-    padding: 91px 0 0;
+    padding: 89px 0 0;
   }
 }
 .forms-main__form {
@@ -1924,7 +1926,7 @@ img {
 }
 @media (min-width: 1200px) {
   .forms-main__form-field--mobile {
-    width: 455px;
+    width: 435px;
   }
 }
 .forms-main__options {
@@ -2486,6 +2488,8 @@ img {
 @media (min-width: 1200px) {
   .forms-main__user-emotions--mobile {
     grid-area: emotion;
+    width: 936px;
+    margin-bottom: 61px;
   }
 }
 .forms-main__emotions-title {
@@ -2541,6 +2545,12 @@ img {
     margin-bottom: 45px;
   }
 }
+@media (min-width: 1200px) {
+  .forms-main__emotions-input--mobile {
+    width: 816px;
+    height: 124px;
+  }
+}
 .forms-main__button-wrapper--mobile {
   background-color: #ffffff;
   text-align: center;
@@ -2559,6 +2569,7 @@ img {
 @media (min-width: 1200px) {
   .forms-main__button-wrapper--mobile {
     grid-area: btn;
+    width: 936px;
   }
 }
 .forms-main__button {
@@ -2591,12 +2602,21 @@ img {
   font-size: 14px;
   line-height: 30px;
 }
-.forms-main__comment span {
-  color: #d22856;
-}
 @media (min-width: 660px) {
   .forms-main__comment {
     padding-top: 17px;
+  }
+}
+.forms-main__comment-sign {
+  color: #d22856;
+}
+.forms-main__comment-extra {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .forms-main__comment-extra {
+    display: inline;
+    color: #283645;
   }
 }
 .modal-failure {

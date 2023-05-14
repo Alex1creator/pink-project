@@ -76,7 +76,7 @@
 
   @media (min-width: @desktop-width) {
     width: 757px;
-    padding: 91px 0 0;
+    padding: 89px 0 0;
   }
 }
 
@@ -193,7 +193,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 455px;
+    width: 435px;
   }
 }
 
@@ -749,6 +749,8 @@
 
   @media (min-width: @desktop-width) {
     grid-area: emotion;
+    width: 936px;
+    margin-bottom: 61px;
   }
 }
 
@@ -808,6 +810,11 @@
     height: 194px;
     margin-bottom: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 816px;
+    height: 124px;
+  }
 }
 
 .forms-main__button-wrapper--mobile {
@@ -826,6 +833,7 @@
 
   @media (min-width: @desktop-width) {
     grid-area: btn;
+    width: 936px;
   }
 }
 
@@ -858,11 +866,20 @@
   font-size: 14px;
   line-height: 30px;
 
-  span {
-    color: #d22856;
-  }
-
   @media (min-width: @tablet-width) {
     padding-top: 17px;
+  }
+}
+
+.forms-main__comment-sign {
+  color: #d22856;
+}
+
+.forms-main__comment-extra {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    color: #283645;
   }
 }
