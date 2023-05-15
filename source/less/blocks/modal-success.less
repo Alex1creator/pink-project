@@ -18,6 +18,13 @@
     width: 460px;
     box-shadow: 0 1px 10px 1px  #e5e5e5;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1275px;
+    width: 780px;
+  }
 }
 
 .modal-success__container {
@@ -27,6 +34,14 @@
 .modal-success__container--mobile {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 331px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+  }
 }
 
 .modal-success__title {

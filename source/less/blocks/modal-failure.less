@@ -19,6 +19,13 @@
     border: 2px solid #e5e5e5;
     box-shadow: 0 1px 10px 1px  #e5e5e5;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1275px;
+    width: 780px;
+  }
 }
 
 .modal-failure__container {
@@ -28,6 +35,10 @@
 .modal-failure__container--mobile {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 351px;
+  }
 }
 
 .modal-failure__title {
@@ -54,6 +65,10 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 351px;
   }
 }
 

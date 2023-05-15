@@ -1820,13 +1820,14 @@ img {
 @media (min-width: 660px) {
   .forms-main__form {
     display: grid;
+    justify-content: center;
     background: #ffffff;
   }
 }
 @media (min-width: 1200px) {
   .forms-main__form {
     padding: 18px 0 0 0;
-    grid-template-columns: 130px 507px 431px;
+    grid-template-columns: 0 507px 431px;
     grid-template-areas: "gap name app" "gap contact contact" "gap option option" "gap emotion emotion" "gap btn btn";
   }
 }
@@ -1890,7 +1891,7 @@ img {
   .forms-main__field-name {
     display: inline;
     flex-grow: 1;
-    width: 484px;
+    width: 462px;
     margin: 0 0 54px;
   }
 }
@@ -1903,7 +1904,7 @@ img {
   .forms-main__form-field--mobile {
     display: flex;
     flex-wrap: nowrap;
-    width: 640px;
+    width: 618px;
   }
 }
 .forms-main__form-field--mobile span {
@@ -2641,12 +2642,25 @@ img {
     box-shadow: 0 1px 10px 1px #e5e5e5;
   }
 }
+@media (min-width: 1200px) {
+  .modal-failure--mobile {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1275px;
+    width: 780px;
+  }
+}
 .modal-failure__container {
   text-align: center;
 }
 .modal-failure__container--mobile {
   width: 280px;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .modal-failure__container--mobile {
+    width: 351px;
+  }
 }
 .modal-failure__title {
   -webkit-margin-before: 0;
@@ -2677,6 +2691,11 @@ img {
   .modal-failure__text {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-failure__text {
+    width: 351px;
   }
 }
 .modal-failure__button {
@@ -2719,12 +2738,30 @@ img {
     box-shadow: 0 1px 10px 1px #e5e5e5;
   }
 }
+@media (min-width: 1200px) {
+  .modal-success--mobile {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1275px;
+    width: 780px;
+  }
+}
 .modal-success__container {
   text-align: center;
 }
 .modal-success__container--mobile {
   width: 280px;
   margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .modal-success__container--mobile {
+    width: 331px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-success__container--mobile {
+    width: 484px;
+  }
 }
 .modal-success__title {
   -webkit-margin-before: 0;

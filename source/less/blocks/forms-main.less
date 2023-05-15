@@ -86,12 +86,13 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
+    justify-content: center;
     background: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
     padding: 18px 0 0 0;
-    grid-template-columns: 130px 507px 431px;
+    grid-template-columns: 0 507px 431px;
     grid-template-areas:
       "gap name app"
       "gap contact contact"
@@ -155,7 +156,7 @@
   @media (min-width: @tablet-width) {
     display: inline;
     flex-grow: 1;
-    width: 484px;
+    width: 462px;
     margin: 0 0 54px;
 
     // &:last-of-type {
@@ -172,7 +173,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: nowrap;
-    width: 640px;
+    width: 618px;
   }
 
   & span {
