@@ -1426,6 +1426,20 @@ img {
   padding-top: 28px;
   padding-bottom: 76px;
 }
+@media (min-width: 660px) {
+  .main-catalog__title--mobile {
+    width: 360px;
+    padding-top: 65px;
+    padding-bottom: 129px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__title--mobile {
+    padding-bottom: 87px;
+  }
+}
 .main-catalog__background {
   background-color: #ffffff;
 }
