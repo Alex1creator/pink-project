@@ -1395,6 +1395,20 @@ img {
   background-position: top center;
   background-color: #f4a460;
 }
+@media (min-width: 660px) {
+  .catalog-page__body {
+    width: 660px;
+    background-image: url("../img/back_tablet.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-page__body {
+    width: 100%;
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+    max-height: 2056px;
+  }
+}
 .main-catalog__title {
   text-align: center;
   font-weight: 300;
