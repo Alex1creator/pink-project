@@ -1492,6 +1492,16 @@ img {
 .main-catalog__foto:last-of-type {
   margin: 0;
 }
+@media (min-width: 660px) {
+  .main-catalog__foto {
+    margin: 0 0 43px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__foto {
+    margin: 0 0 20px 0;
+  }
+}
 .first-foto::before {
   content: "ПАНОРАМА ДНЯ";
   display: block;
@@ -1631,8 +1641,21 @@ img {
   text-transform: uppercase;
   color: #d22856;
 }
+@media (min-width: 660px) {
+  .first-foto .main-catalog__reaction {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .main-catalog__icon-like--mobile {
   margin-right: 19px;
+}
+@media (min-width: 660px) {
+  .first-foto .main-catalog__icon-like--mobile {
+    margin-left: 14px;
+    margin-right: 0;
+    align-self: center;
+  }
 }
 .main-catalog__call-to-action,
 .main-catalog__call-to-action-header {
