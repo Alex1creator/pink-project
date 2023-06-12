@@ -1503,6 +1503,10 @@ img {
     margin: 0 0 20px 0;
   }
 }
+.main-catalog__img {
+  display: block;
+  margin: 0 auto;
+}
 @media (min-width: 660px) {
   .main-catalog__img {
     width: 300px;
@@ -1574,6 +1578,9 @@ img {
     display: flex;
     flex-direction: row-reverse;
   }
+}
+.main-catalog__icon-like {
+  margin-right: 19px;
 }
 .main-catalog__call-to-action,
 .main-catalog__call-to-action-header {
@@ -3015,6 +3022,11 @@ img {
     margin: 0 auto;
     padding: 24px;
   }
+}
+.first-foto__foto-description--mobile span {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 3px;
 }
 .first-foto__user-description {
   -webkit-margin-before: 0;
