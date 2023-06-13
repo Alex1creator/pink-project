@@ -1534,13 +1534,9 @@ img {
 }
 @media (min-width: 660px) {
   .main-catalog__foto-description--mobile {
-    display: grid;
-    grid-template-areas: "name time like" "comment comment comment";
-    justify-content: start;
-    grid-template-columns: auto 1fr 1fr;
-    width: 300px;
+    width: 240px;
     margin: 0 auto;
-    padding: 0;
+    padding: 23px 30px 0;
   }
 }
 .main-catalog__user-description {
@@ -1559,6 +1555,7 @@ img {
   .main-catalog__user-description--mobile {
     grid-area: comment;
     order: 1;
+    min-height: 49px;
   }
 }
 .main-catalog__reaction {
@@ -1574,13 +1571,19 @@ img {
   color: #d22856;
 }
 @media (min-width: 660px) {
-  .first-foto .main-catalog__reaction {
+  .main-catalog__reaction {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 .main-catalog__icon-like {
   margin-right: 19px;
+}
+@media (min-width: 660px) {
+  .main-catalog__icon-like {
+    margin-right: 0;
+  }
 }
 .main-catalog__call-to-action,
 .main-catalog__call-to-action-header {
@@ -1599,11 +1602,27 @@ img {
   width: 280px;
   padding: 43px 20px 0;
 }
+@media (min-width: 660px) {
+  .main-catalog__call-to-action-header--mobile {
+    margin: 0 auto;
+    width: 660px;
+    padding: 43px 0 0;
+    font-size: 18px;
+  }
+}
 .main-catalog__call-to-action--mobile {
   background-color: #ffffff;
   text-align: center;
   width: 280px;
   padding: 0 20px 42px;
+}
+@media (min-width: 660px) {
+  .main-catalog__call-to-action--mobile {
+    margin: 0 auto;
+    width: 660px;
+    padding: 0;
+    font-size: 18px;
+  }
 }
 .main-catalog__redactor {
   -webkit-margin-before: 0;
@@ -3028,6 +3047,7 @@ img {
   margin: 0 20px 21px;
   padding: 18px 0 0 18px;
   background-color: #f2f2f2;
+  font-weight: 700;
 }
 @media (min-width: 660px) {
   .first-foto__foto-description--mobile {
@@ -3050,6 +3070,7 @@ img {
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
+  font-weight: 400;
 }
 @media (min-width: 660px) {
   .first-foto__user-description {
@@ -3063,6 +3084,9 @@ img {
   -webkit-margin-after: 0;
           margin-block-end: 0;
   padding: 13px 0 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
 }
 @media (min-width: 660px) {
   .first-foto__reaction {
