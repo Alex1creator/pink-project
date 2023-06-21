@@ -88,7 +88,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 43px 0;
+    margin: 0 0 23px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -186,6 +186,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -238,8 +239,21 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 660px;
-    padding: 0;
+    padding: 0 0 51px;
     font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.main-catalog__redactor-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-areas: "foto redactor"
+      "foto buttons";
   }
 
   @media (min-width: @desktop-width) {
@@ -254,6 +268,15 @@
   margin-inline-end: 0;
   background-color: #f2f2f2;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .main-catalog__img-redactor {
@@ -263,7 +286,6 @@
 
 .main-catalog__instruments-list {
   list-style-type: none;
-
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -275,6 +297,15 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .main-catalog__instrument-crop {
@@ -334,6 +365,11 @@
     background: #283645;
     opacity: 0.1;
   }
+
+  @media (min-width: @tablet-width) {
+    grid-area: redactor;
+    width: 260px;
+  }
 }
 
 .main-catalog__ranger {
@@ -345,11 +381,26 @@
   padding: 0;
 }
 
-
-
 .main-catalog__ranger-scale-fill-mobile,
 .main-catalog__ranger-scale-contrast-mobile {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 2px;
+      margin: 0 auto;
+      background-color: #283645;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 // .main-catalog__ranger-scale-crop-mobile {
@@ -385,6 +436,10 @@
   margin-block-end: 0;
   padding-inline-start: 0;
   background: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    grid-area: buttons;
+  }
 }
 
 .main-catalog__buttons-item--mobile {
