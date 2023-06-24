@@ -239,7 +239,7 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 660px;
-    padding: 0 0 51px;
+    padding: 0 0 70px;
     font-size: 18px;
   }
 
@@ -251,9 +251,11 @@
 .main-catalog__redactor-wrapper {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 380px 280px;
     grid-template-areas: "foto redactor"
       "foto buttons";
+    padding-top: 38px;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: @desktop-width) {
@@ -272,6 +274,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     width: 300px;
+    padding-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -282,6 +285,15 @@
 .main-catalog__img-redactor {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .main-catalog__instruments-list {
@@ -301,6 +313,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -319,6 +332,14 @@
   &:active .main-catalog__crop {
     fill: #d22856;
     opacity: 1;
+  }
+
+
+}
+
+.main-catalog__crop {
+  @media (min-width: @tablet-width) {
+    d: ("M16 14h2V6a2 2 0 0 0-2-2H8v2h8v8ZM6 16V0H4v4H0v2h4v10a2 2 0 0 0 2 2h10v4h2v-4h4v-2H6Z");
   }
 }
 

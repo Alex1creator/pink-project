@@ -1621,15 +1621,17 @@ img {
   .main-catalog__call-to-action--mobile {
     margin: 0 auto;
     width: 660px;
-    padding: 0 0 51px;
+    padding: 0 0 70px;
     font-size: 18px;
   }
 }
 @media (min-width: 660px) {
   .main-catalog__redactor-wrapper {
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 380px 280px;
     grid-template-areas: "foto redactor" "foto buttons";
+    padding-top: 38px;
+    background-color: #f2f2f2;
   }
 }
 .main-catalog__redactor {
@@ -1648,11 +1650,18 @@ img {
   .main-catalog__redactor {
     display: flex;
     width: 300px;
+    padding-left: 20px;
   }
 }
 .main-catalog__img-redactor {
   display: block;
   margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .main-catalog__img-redactor {
+    width: 300px;
+    height: 400px;
+  }
 }
 .main-catalog__instruments-list {
   list-style-type: none;
@@ -1674,6 +1683,7 @@ img {
   .main-catalog__instruments-list--mobile {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 }
 .main-catalog__instrument-crop {
@@ -1686,6 +1696,12 @@ img {
 .main-catalog__instrument-crop:active .main-catalog__crop {
   fill: #d22856;
   opacity: 1;
+}
+@media (min-width: 660px) {
+  .main-catalog__instrument-crop svg {
+    width: 44px;
+    height: 44px;
+  }
 }
 .main-catalog__instrument-fill {
   border: none;
