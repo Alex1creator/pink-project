@@ -333,13 +333,31 @@
     fill: #d22856;
     opacity: 1;
   }
-
-
 }
 
-.main-catalog__crop {
+.main-catalog__crop-big,
+.main-catalog__fill-big,
+.main-catalog__contrast-big {
   @media (min-width: @tablet-width) {
-    d: ("M16 14h2V6a2 2 0 0 0-2-2H8v2h8v8ZM6 16V0H4v4H0v2h4v10a2 2 0 0 0 2 2h10v4h2v-4h4v-2H6Z");
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-catalog__crop-small,
+.main-catalog__fill-small,
+.main-catalog__contrast-small {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -370,10 +388,6 @@
     opacity: 1;
   }
 }
-
-// .main-catalog__instruments-buttons-current {
-
-// }
 
 .main-catalog__range {
   background: #f2f2f2;

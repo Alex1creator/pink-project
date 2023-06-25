@@ -1698,9 +1698,36 @@ img {
   opacity: 1;
 }
 @media (min-width: 660px) {
-  .main-catalog__instrument-crop svg {
-    width: 44px;
-    height: 44px;
+  .main-catalog__crop-big,
+  .main-catalog__fill-big,
+  .main-catalog__contrast-big {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__crop-big,
+  .main-catalog__fill-big,
+  .main-catalog__contrast-big {
+    display: block;
+  }
+}
+.main-catalog__crop-small,
+.main-catalog__fill-small,
+.main-catalog__contrast-small {
+  display: none;
+}
+@media (min-width: 660px) {
+  .main-catalog__crop-small,
+  .main-catalog__fill-small,
+  .main-catalog__contrast-small {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__crop-small,
+  .main-catalog__fill-small,
+  .main-catalog__contrast-small {
+    display: none;
   }
 }
 .main-catalog__instrument-fill {
