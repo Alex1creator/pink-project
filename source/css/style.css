@@ -1836,7 +1836,8 @@ img {
 }
 @media (min-width: 660px) {
   .main-catalog__buttons-list {
-    grid-area: 2/2/3/3;
+    margin-top: auto;
+    grid-area: 1/2/2/2;
   }
 }
 .main-catalog__buttons-item--mobile {
