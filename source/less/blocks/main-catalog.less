@@ -251,7 +251,7 @@
 .main-catalog__redactor-wrapper {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 400px 260px;
+    grid-template-columns: 391px 269px;
     grid-template-areas: "foto redactor";
     padding-top: 38px;
     background-color: #f2f2f2;
@@ -357,7 +357,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 6px 0 0 34px;
+    padding: 6px 0 40px 34px;
   }
 
   @media (min-width: @desktop-width) {
@@ -431,14 +431,18 @@
   @media (min-width: @tablet-width) {
     display: block;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 240px;
-      height: 2px;
-      margin: 0 auto;
-      background-color: #283645;
-    }
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   width: 240px;
+    //   height: 2px;
+    //   margin: 0 auto;
+    //   background-color: #283645;
+
+    //   @media (min-width: @tablet-width) {
+    //     width: 202px;
+    //   }
+    // }
   }
 
   @media (min-width: @desktop-width) {
@@ -449,6 +453,10 @@
 .main-catalog__ranger-bar-crop-mobile {
   position: relative;
   padding: 35px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 37px 0;
+  }
 
   &::before {
     content: "";
@@ -478,25 +486,85 @@
   &:active {
     background-color: #d22856;
   }
+
+  @media (min-width: @tablet-width) {
+    top: 31px;
+    right: 57px;
+  }
 }
 
 .main-catalog__ranger-bar-fill {
   @media (min-width: @tablet-width) {
     position: relative;
     padding: 35px 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 2px;
+      margin: 0 auto;
+      background-color: #283645;
+
+      @media (min-width: @tablet-width) {
+        width: 202px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 288px;
+      }
+    }
+  }
+}
+
+.main-catalog__ranger-bar-contrast {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 33px 0;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 2px;
+      margin: 0 auto;
+      background-color: #283645;
+
+      @media (min-width: @tablet-width) {
+        width: 202px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 288px;
+      }
+    }
   }
 }
 
 .main-catalog__ranger-button-fill {
-  // width: 14px;
-  // height: 14px;
-  // border: 2px solid #d22856;
-  // border-radius: 50%;
-  // background: #ffffff;
-  // padding: 0;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 30px;
+    left: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
+.main-catalog__ranger-button-contrast {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 28px;
+    left: 125px;
+  }
 
+  @media (min-width: @desktop-width) {
+
+  }
+}
 
 
 .main-catalog__buttons-list {
