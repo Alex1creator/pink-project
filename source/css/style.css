@@ -1717,14 +1717,12 @@ img {
   }
 }
 .main-catalog__crop-small,
-.main-catalog__fill-small,
-.main-catalog__contrast-small {
+.main-catalog__fill-small {
   display: none;
 }
 @media (min-width: 660px) {
   .main-catalog__crop-small,
-  .main-catalog__fill-small,
-  .main-catalog__contrast-small {
+  .main-catalog__fill-small {
     display: block;
     padding: 6px 0 27px 4px;
     margin-bottom: 11px;
@@ -1734,7 +1732,23 @@ img {
 }
 @media (min-width: 1200px) {
   .main-catalog__crop-small,
-  .main-catalog__fill-small,
+  .main-catalog__fill-small {
+    display: none;
+  }
+}
+.main-catalog__contrast-small {
+  display: none;
+}
+@media (min-width: 660px) {
+  .main-catalog__contrast-small {
+    display: block;
+    padding: 8px 0 27px 4px;
+    margin-bottom: 11px;
+    margin-left: 31px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+}
+@media (min-width: 1200px) {
   .main-catalog__contrast-small {
     display: none;
   }
