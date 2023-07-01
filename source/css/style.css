@@ -1661,7 +1661,7 @@ img {
 }
 @media (min-width: 1200px) {
   .main-catalog__redactor-wrapper {
-    grid-template-columns: 568px 372px;
+    grid-template-columns: 561px 379px;
     justify-content: center;
     background-color: #ffffff;
     padding-top: 0;
@@ -1692,6 +1692,7 @@ img {
     width: 488px;
     padding-left: 80px;
     padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 .main-catalog__img-redactor {
@@ -1715,6 +1716,11 @@ img {
           margin-block-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+@media (min-width: 1200px) {
+  .main-catalog__instruments-item {
+    padding-right: 20px;
+  }
 }
 .main-catalog__instruments-list--mobile {
   display: grid;
@@ -1836,6 +1842,11 @@ img {
     width: 260px;
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__range {
+    width: initial;
+  }
+}
 .main-catalog__ranger {
   width: 14px;
   height: 14px;
@@ -1880,6 +1891,12 @@ img {
 @media (min-width: 1200px) {
   .main-catalog__ranger-bar-crop-mobile::before {
     width: 288px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__ranger-bar-crop-mobile {
+    padding: 73px 0 35px;
   }
 }
 .main-catalog__ranger--mobile {
@@ -1978,11 +1995,25 @@ img {
     grid-area: 1/2/2/2;
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__buttons-list {
+    right: 93px;
+    bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+  }
+}
 .main-catalog__buttons-item--mobile {
   padding: 10px 0 0;
 }
 .main-catalog__buttons-item--mobile:first-of-type {
   padding: 37px 0 0;
+}
+@media (min-width: 1200px) {
+  .main-catalog__buttons-item--mobile:first-of-type {
+    padding: 0;
+  }
 }
 .main-catalog__buttons-item--mobile:last-of-type {
   padding: 10px 0 42px;
@@ -1991,6 +2022,11 @@ img {
   .main-catalog__buttons-item--mobile:last-of-type {
     padding-top: 25px;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__buttons-item--mobile:last-of-type {
+    padding: 0;
   }
 }
 .main-catalog__button-post {
@@ -2007,6 +2043,11 @@ img {
 @media (min-width: 660px) {
   .main-catalog__button-post {
     width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__button-post {
+    width: 183px;
   }
 }
 .main-catalog__button-post:hover {
@@ -2031,6 +2072,11 @@ img {
 @media (min-width: 660px) {
   .main-catalog__button-escape {
     width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__button-escape {
+    width: 183px;
   }
 }
 .main-catalog__button-escape:hover {
