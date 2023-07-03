@@ -1665,6 +1665,7 @@ img {
     justify-content: center;
     background-color: #ffffff;
     padding-top: 0;
+    padding-bottom: 29px;
   }
 }
 .main-catalog__redactor {
@@ -1723,6 +1724,9 @@ img {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
     margin-bottom: 13px;
+  }
+  .main-catalog__instruments-item:last-of-type {
+    border: none;
   }
 }
 .main-catalog__instruments-list--mobile {
@@ -1785,7 +1789,7 @@ img {
   .main-catalog__contrast-big {
     display: block;
     padding-bottom: 12px;
-    padding-right: 4px;
+    padding-right: 8px;
     padding-top: 5px;
   }
 }
@@ -1946,6 +1950,12 @@ img {
     right: 57px;
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__ranger--mobile {
+    top: 67px;
+    right: 76px;
+  }
+}
 @media (min-width: 660px) {
   .main-catalog__ranger-bar-fill {
     position: relative;
@@ -1969,6 +1979,7 @@ img {
 @media (min-width: 660px) and (min-width: 1200px) {
   .main-catalog__ranger-bar-fill::before {
     width: 288px;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1999,11 +2010,13 @@ img {
 @media (min-width: 660px) and (min-width: 1200px) {
   .main-catalog__ranger-bar-contrast::before {
     width: 288px;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
   .main-catalog__ranger-bar-contrast {
     width: 325px;
+    border: none;
   }
 }
 @media (min-width: 660px) {
