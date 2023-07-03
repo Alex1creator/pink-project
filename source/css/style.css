@@ -1841,6 +1841,18 @@ img {
   fill: #d22856;
   opacity: 1;
 }
+@media (min-width: 1200px) {
+  .main-catalog__fill {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__contrast {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
 .main-catalog__instrument-contrast {
   border: none;
 }
