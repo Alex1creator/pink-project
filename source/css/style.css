@@ -1639,7 +1639,7 @@ img {
   .main-catalog__call-to-action--mobile {
     margin: 0 auto;
     width: 660px;
-    padding: 0 0 70px;
+    padding: 0 0 68px;
     font-size: 18px;
   }
 }
@@ -1719,7 +1719,10 @@ img {
 }
 @media (min-width: 1200px) {
   .main-catalog__instruments-item {
-    padding-right: 20px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    margin-bottom: 13px;
   }
 }
 .main-catalog__instruments-list--mobile {
@@ -1736,6 +1739,11 @@ img {
     padding: 0;
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__instruments-list--mobile {
+    align-items: end;
+  }
+}
 .main-catalog__instrument-crop {
   border: none;
 }
@@ -1748,17 +1756,37 @@ img {
   opacity: 1;
 }
 @media (min-width: 660px) {
-  .main-catalog__crop-big,
-  .main-catalog__fill-big,
+  .main-catalog__crop-big {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__crop-big {
+    display: block;
+  }
+}
+@media (min-width: 660px) {
+  .main-catalog__fill-big {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__fill-big {
+    display: block;
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 660px) {
   .main-catalog__contrast-big {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .main-catalog__crop-big,
-  .main-catalog__fill-big,
   .main-catalog__contrast-big {
     display: block;
+    padding-bottom: 12px;
+    padding-right: 4px;
+    padding-top: 5px;
   }
 }
 .main-catalog__crop-small,
@@ -1875,6 +1903,11 @@ img {
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__ranger-bar-crop-mobile {
+    width: 325px;
+  }
+}
 .main-catalog__ranger-bar-crop-mobile::before {
   content: "";
   display: block;
@@ -1938,6 +1971,11 @@ img {
     width: 288px;
   }
 }
+@media (min-width: 1200px) {
+  .main-catalog__ranger-bar-fill {
+    width: 325px;
+  }
+}
 @media (min-width: 660px) {
   .main-catalog__ranger-bar-contrast {
     position: relative;
@@ -1961,6 +1999,11 @@ img {
 @media (min-width: 660px) and (min-width: 1200px) {
   .main-catalog__ranger-bar-contrast::before {
     width: 288px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-catalog__ranger-bar-contrast {
+    width: 325px;
   }
 }
 @media (min-width: 660px) {
