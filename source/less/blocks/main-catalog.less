@@ -242,7 +242,7 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 660px;
-    padding: 0 0 70px;
+    padding: 0 0 68px;
     font-size: 18px;
   }
 
@@ -319,7 +319,10 @@
 
 .main-catalog__instruments-item {
   @media (min-width: @desktop-width) {
-    padding-right: 20px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    margin-bottom: 13px;
   }
 }
 
@@ -337,7 +340,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    align-items: end;
   }
 }
 
@@ -355,8 +358,27 @@
   }
 }
 
-.main-catalog__crop-big,
-.main-catalog__fill-big,
+.main-catalog__crop-big {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-catalog__fill-big {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-bottom: 5px;
+  }
+}
+
 .main-catalog__contrast-big {
   @media (min-width: @tablet-width) {
     display: none;
@@ -364,6 +386,9 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    padding-bottom: 12px;
+    padding-right: 4px;
+    padding-top: 5px;
   }
 }
 
@@ -498,6 +523,10 @@
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
+  @media (min-width: @desktop-width) {
+    width: 325px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -560,6 +589,10 @@
       }
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 325px;
+  }
 }
 
 .main-catalog__ranger-bar-contrast {
@@ -584,6 +617,10 @@
         width: 288px;
       }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 325px;
   }
 }
 
