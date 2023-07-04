@@ -53,12 +53,13 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 1200px) {
   .header-page--closed {
     display: none;
   }
   .header-page--opened {
     display: block;
+    width: inherit;
   }
 }
 @media (min-width: 1200px) {
@@ -124,25 +125,23 @@ img {
 .header-page__logo-text--phone {
   margin: 22px 21px 20px 20px;
 }
-.header-page__navigation-toggle {
-  background-image: url("../img/open-menu-btn.png");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.header-page__navigation-toggle:hover {
-  background-image: url("../img/open-menu-hover.png");
-}
-.header-page__navigation-toggle:active {
-  background-image: url("../img/open-menu-hover.png");
-  opacity: 0.3;
-}
 .header-page__navigation-toggle--phone {
   width: 100px;
   padding: 0;
   margin: 0;
   margin-left: auto;
   border: none;
+  background-image: url("../img/open-menu-btn.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-page__navigation-toggle--phone:hover {
+  background-image: url("../img/open-menu-hover.png");
+}
+.header-page__navigation-toggle--phone:active {
+  background-image: url("../img/open-menu-hover.png");
+  opacity: 0.3;
 }
 @media (min-width: 1200px) {
   .header-page__navigation-toggle--phone {
@@ -157,6 +156,7 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 2;
 }
 @media (min-width: 1200px) {
   .header-page__navigation-list {
