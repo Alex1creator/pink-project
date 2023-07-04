@@ -53,6 +53,14 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
+@media (max-width: 320px) {
+  .header-page--closed {
+    display: none;
+  }
+  .header-page--opened {
+    display: block;
+  }
+}
 @media (min-width: 1200px) {
   .header-page__container {
     display: flex;
@@ -140,10 +148,6 @@ img {
   .header-page__navigation-toggle--phone {
     display: none;
   }
-}
-.header-page__navigation {
-  display: none;
-  width: inherit;
 }
 .header-page__navigation-list {
   position: absolute;

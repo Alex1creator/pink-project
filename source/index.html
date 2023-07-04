@@ -14,7 +14,7 @@
 
   <header class="header-page">
     <div class="header-page__container">
-      <div class="header-page__wrapper header-page__wrapper--width">
+      <div class="header-page__navigation header-page--opened header-page__wrapper header-page__wrapper--width">
         <svg class="header-page__logo-text header-page__logo-text--phone header-page__logo-text--tablet"
           xmlns="http://www.w3.org/2000/svg" width="74" height="23" fill="none">
           <path fill="#fff"
@@ -43,7 +43,7 @@
             class="visually-hidden">открыть
             меню</span></button>
       </div>
-      <nav class="header-page__navigation header-page__navigation--column">
+      <nav class="header-page__navigation header-page--closed header-page__navigation--column header-page--nojs">
         <ol class="header-page__navigation-list">
           <li class="header-page__navigation-item"><a>Главная</a></li>
           <li class="header-page__navigation-item"><a href="catalog.html"> Фотографии</a></li>
@@ -54,6 +54,23 @@
       </nav>
     </div>
   </header>
+
+  <script>
+    var navMain = document.querySelector('.header-page__navigation');
+    var navToggle = document.querySelector('.header-page__navigation-toggle');
+
+    navMain.classList.remove('header-page--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('header-page--closed')) {
+        navMain.classList.remove('header-page--closed');
+        navMain.classList.add('header-page--opened');
+      } else {
+        navMain.classList.add('header-page--closed');
+        navMain.classList.remove('header-page--opened');
+      }
+    });
+  </script>
   <main class="main-page">
     <section class="slogan-block">
       <h1 class="visually-hidden">мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
