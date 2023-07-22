@@ -152,11 +152,22 @@ img {
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: inherit;
+  width: 320px;
   list-style-type: none;
   padding: 0;
   margin: 0;
   z-index: 2;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+@media (min-width: 660px) {
+  .header-page__navigation-list {
+    width: 660px;
+  }
 }
 @media (min-width: 1200px) {
   .header-page__navigation-list {

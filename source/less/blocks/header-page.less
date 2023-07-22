@@ -174,11 +174,19 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: inherit;
+  width: 320px;
   list-style-type: none;
   padding: 0;
   margin: 0;
   z-index: 2;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
