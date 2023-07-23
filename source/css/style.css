@@ -54,12 +54,11 @@ img {
   }
 }
 @media (max-width: 1200px) {
-  .header-page--closed {
+  .header-page--closed .header-page__navigation-list {
     display: none;
   }
-  .header-page--opened {
-    display: block;
-    width: inherit;
+  .header-page--opened .header-page__navigation-list {
+    display: flex;
   }
 }
 @media (min-width: 1200px) {
@@ -124,6 +123,9 @@ img {
 }
 .header-page__logo-text--phone {
   margin: 22px 21px 20px 20px;
+}
+.header-page__wrapper .header-page--opened {
+  background-image: none;
 }
 .header-page__navigation-toggle--phone {
   width: 100px;

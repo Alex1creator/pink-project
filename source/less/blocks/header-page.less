@@ -37,13 +37,12 @@
 }
 
 @media (max-width: @desktop-width) {
-  .header-page--closed {
+  .header-page--closed .header-page__navigation-list {
     display: none;
   }
 
-  .header-page--opened {
-    display: block;
-    width: inherit;
+  .header-page--opened .header-page__navigation-list {
+    display: flex;
   }
 }
 
@@ -142,6 +141,10 @@
 
 .header-page__logo-text--phone {
   margin: 22px 21px 20px 20px;
+}
+
+.header-page__wrapper .header-page--opened {
+  background-image: none;
 }
 
 
