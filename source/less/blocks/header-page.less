@@ -145,8 +145,42 @@
 
 .header-page__wrapper .header-page--opened {
   background-image: none;
+
+  &:hover {
+    background-image: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#d22856, 30%);
+  }
 }
 
+.header-page--nojs .header-page__navigation-list {
+  display: flex;
+}
 
 .header-page__navigation-toggle--phone {
   width: 100px;
@@ -172,6 +206,10 @@
     display: none;
   }
 }
+
+// .header-page__wrapper .header-page__navigation-toggle--phone:hover .header-page--opened {
+//   background-image: none;
+// }
 
 .header-page__navigation-list {
   position: absolute;

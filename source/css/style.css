@@ -127,6 +127,34 @@ img {
 .header-page__wrapper .header-page--opened {
   background-image: none;
 }
+.header-page__wrapper .header-page--opened:hover {
+  background-image: none;
+}
+.header-page__wrapper .header-page--opened::before,
+.header-page__wrapper .header-page--opened::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.header-page__wrapper .header-page--opened::before {
+  transform: rotate(45deg);
+}
+.header-page__wrapper .header-page--opened::after {
+  transform: rotate(-45deg);
+}
+.header-page__wrapper .header-page--opened:hover::before,
+.header-page__wrapper .header-page--opened:hover::after {
+  background-color: #d22856;
+}
+.header-page__wrapper .header-page--opened:active::before,
+.header-page__wrapper .header-page--opened:active::after {
+  background-color: rgba(210, 40, 86, 0.3);
+}
+.header-page--nojs .header-page__navigation-list {
+  display: flex;
+}
 .header-page__navigation-toggle--phone {
   width: 100px;
   padding: 0;
