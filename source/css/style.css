@@ -120,6 +120,13 @@ img {
     padding-bottom: 40px;
     padding-top: 27px;
   }
+  .header-page__logo-desktop:hover path {
+    fill: #d22856;
+  }
+  .header-page__logo-desktop:active path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 .header-page__logo-text--phone {
   margin: 22px 21px 20px 20px;
@@ -287,6 +294,13 @@ img {
   line-height: 18px;
   font-weight: 700;
   margin: 29px auto;
+}
+.buttons-block__download-button:hover {
+  color: #d22855;
+  background-color: white;
+}
+.buttons-block__download-button:active {
+  color: rgba(210, 40, 85, 0.3);
 }
 @media (min-width: 660px) {
   .buttons-block__download-button {
