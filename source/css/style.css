@@ -231,6 +231,12 @@ img {
     margin-left: auto;
   }
 }
+@media (max-width: 1199px) {
+  .header-page__navigation-item {
+    border-bottom: 1px solid #1d1d1d;
+    border-top: 1px solid #414040;
+  }
+}
 .header-page__navigation-link {
   display: inline-block;
   width: inherit;
@@ -259,6 +265,11 @@ img {
 }
 .header-page__navigation-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 1200px) {
+  .header-page__navigation-link--active {
+    border-bottom: 2px solid #ffffff;
+  }
 }
 .visually-hidden {
   position: absolute;

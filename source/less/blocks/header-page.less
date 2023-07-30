@@ -265,6 +265,11 @@
       margin-left: auto;
     }
   }
+
+  @media (max-width: (@desktop-width - 1px)) {
+    border-bottom: 1px solid #1d1d1d;
+    border-top: 1px solid #414040;
+  }
 }
 
 .header-page__navigation-link {
@@ -295,5 +300,18 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.header-page__navigation-link--active {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   width: inherit;
+    //   height: 2px;
+    //   background-color: #ffffff;
+    // }
   }
 }
