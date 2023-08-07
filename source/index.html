@@ -89,7 +89,11 @@
     <section class="slogan-block">
       <h1 class="visually-hidden">мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
       <p class="slogan-block__title">Взгляните на жизнь иначе!</p>
-      <img class="slogan-block__image" src="img/phone-hand.png" width="320" height="286" alt="телефон в руке.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/phone-hand-1050-645.png">
+        <source media="(min-width: 660px)" srcset="img/phone-hand-660-545.png">
+        <img class="slogan-block__image" src="img/phone-hand.png" width="320" height="286" alt="телефон в руке.">
+      </picture>
     </section>
     <section class="buttons-block">
       <h2 class="visually-hidden">скачать приложение "Взгляните на жизнь иначе!"</h2>
