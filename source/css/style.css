@@ -342,7 +342,7 @@ img {
 @media (min-width: 1200px) {
   .buttons-block__download-button {
     padding: 16px 29px;
-    margin: 36px 0 67px 19px;
+    margin: 36px 0 67px 0;
     font-size: 21px;
   }
 }
@@ -361,7 +361,7 @@ img {
 }
 @media (min-width: 1200px) {
   .buttons-block__link-list {
-    padding-left: 65px;
+    padding-left: 45px;
     -webkit-margin-after: 21px;
             margin-block-end: 21px;
     justify-content: start;
@@ -391,7 +391,6 @@ img {
 }
 @media (min-width: 1200px) {
   .buttons-block__description-buttons--style {
-    padding-left: 20px;
     margin: 0;
     text-align: center;
   }
@@ -404,7 +403,7 @@ img {
 }
 @media (min-width: 1200px) {
   .slogan-block {
-    width: 940px;
+    width: 1050px;
     margin: 0 auto;
   }
 }
@@ -436,7 +435,7 @@ img {
     width: 300px;
     font-size: 50px;
     line-height: 68px;
-    margin: 102px 0 0 0;
+    margin: 102px 0 0 53px;
   }
 }
 .slogan-block__image {
@@ -455,8 +454,8 @@ img {
   .slogan-block__image {
     width: 1050px;
     height: 645px;
-    top: 17px;
-    right: -75px;
+    top: -1px;
+    right: -70px;
   }
 }
 .promo {
