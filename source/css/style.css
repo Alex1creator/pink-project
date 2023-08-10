@@ -1492,12 +1492,24 @@ img {
     background-image: url("../img/back_tablet.jpg");
   }
 }
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
+  .catalog-page__body {
+    background-image: url("../img/back-tablet@2x.jpg");
+    background-size: 660px;
+  }
+}
 @media (min-width: 1200px) {
   .catalog-page__body {
     width: 100%;
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
     max-height: 2056px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .catalog-page__body {
+    background-image: url("../img/back-desktop@2x.jpg");
+    background-size: 1200px;
   }
 }
 .main-catalog__title {

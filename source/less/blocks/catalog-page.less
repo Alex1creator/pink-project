@@ -12,6 +12,11 @@
   @media (min-width: @tablet-width) {
     width: 660px;
     background-image: url("../img/back_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: @tablet-width;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -19,5 +24,10 @@
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
     max-height: 2056px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: @desktop-width;
+    }
   }
 }
