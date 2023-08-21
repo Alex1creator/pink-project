@@ -1,0 +1,29 @@
+{
+  "icon": [
+    {
+      "src": "img/favicons/apple-icon.png",
+      "type": "img/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicons/apple-icon-76x76.png",
+      "type": "img/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "img/favicons/apple-icon-57x57.png",
+      "type": "img/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "img/favicons/android-icon-144x144.png",
+      "type": "img/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "img/favicons/android-icon-36x36.png",
+      "type": "img/png",
+      "sizes": "36x36"
+    }
+  ]
+}
