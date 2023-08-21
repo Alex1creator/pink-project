@@ -1401,15 +1401,21 @@ img {
     text-align: left;
   }
 }
+.footer-page__logo-desktop {
+  display: inline;
+  padding-bottom: 40px;
+  padding-top: 0;
+}
 @media (max-width: 1200px) {
   .footer-page__logo-desktop {
     display: none;
   }
 }
-.footer-page__logo-desktop .footer-page__logo-desktop {
-  display: inline;
-  padding-bottom: 40px;
-  padding-top: 27px;
+.footer-page__logo-desktop:hover path {
+  fill: #D22856;
+}
+.footer-page__logo-desktop:active path {
+  opacity: 0.3;
 }
 @media (min-width: 1200px) {
   .footer-page__logo-img {

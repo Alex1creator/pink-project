@@ -54,10 +54,16 @@
     display: none;
   }
 
-  .footer-page__logo-desktop {
-    display: inline;
-    padding-bottom: 40px;
-    padding-top: 27px;
+  display: inline;
+  padding-bottom: 40px;
+  padding-top: 0;
+
+  &:hover path {
+    fill: @hover-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
   }
 }
 
