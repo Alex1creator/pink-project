@@ -83,12 +83,14 @@
 }
 
 .header-page__logo-text {
-  &:hover path {
-    fill: @hover-color;
+  color: #ffffff;
+
+  &:hover use {
+    color: @hover-color;
   }
 
-  &:active path {
-    fill: @active-color;
+  &:active use {
+    color: @active-color;
     opacity: 0.3;
   }
 }
@@ -109,13 +111,14 @@
   .header-page__logo-tablet {
     display: inline;
     margin: 27px 0 43px 20px;
+    color: #ffffff;
 
-    &:hover path {
-      fill: @hover-color;
+    &:hover use {
+      color: @hover-color;
     }
 
-    &:active path {
-      fill: @active-color;
+    &:active use {
+      color: @active-color;
       opacity: 0.3;
     }
   }
@@ -134,15 +137,14 @@
     display: inline;
     padding-bottom: 40px;
     padding-top: 27px;
-    // width: 940px;
-    // margin: 0 auto;
+    color: #ffffff;
   }
 
-  .header-page__logo-desktop:hover path {
-    fill: #d22856;
+  .header-page__logo-desktop:hover use {
+    color: #d22856;
   }
 
-  .header-page__logo-desktop:active path {
+  .header-page__logo-desktop:active use {
     fill: #ffffff;
     opacity: 0.3;
   }

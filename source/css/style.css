@@ -91,11 +91,14 @@ img {
     background-color: transparent;
   }
 }
-.header-page__logo-text:hover path {
-  fill: #D22856;
+.header-page__logo-text {
+  color: #ffffff;
 }
-.header-page__logo-text:active path {
-  fill: #FFFFFF;
+.header-page__logo-text:hover use {
+  color: #D22856;
+}
+.header-page__logo-text:active use {
+  color: #FFFFFF;
   opacity: 0.3;
 }
 .header-page__logo-tablet {
@@ -111,12 +114,13 @@ img {
   .header-page__logo-tablet {
     display: inline;
     margin: 27px 0 43px 20px;
+    color: #ffffff;
   }
-  .header-page__logo-tablet:hover path {
-    fill: #D22856;
+  .header-page__logo-tablet:hover use {
+    color: #D22856;
   }
-  .header-page__logo-tablet:active path {
-    fill: #FFFFFF;
+  .header-page__logo-tablet:active use {
+    color: #FFFFFF;
     opacity: 0.3;
   }
 }
@@ -131,11 +135,12 @@ img {
     display: inline;
     padding-bottom: 40px;
     padding-top: 27px;
+    color: #ffffff;
   }
-  .header-page__logo-desktop:hover path {
-    fill: #d22856;
+  .header-page__logo-desktop:hover use {
+    color: #d22856;
   }
-  .header-page__logo-desktop:active path {
+  .header-page__logo-desktop:active use {
     fill: #ffffff;
     opacity: 0.3;
   }
