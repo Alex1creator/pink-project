@@ -1422,10 +1422,20 @@ img {
 .footer-page__logo-desktop:active path {
   opacity: 0.3;
 }
+.footer-page__logo-img {
+  color: #283645;
+}
 @media (min-width: 1200px) {
   .footer-page__logo-img {
     display: none;
   }
+}
+.footer-page__logo-img:hover use {
+  color: #d22856;
+}
+.footer-page__logo-img:active use {
+  color: #283645;
+  opacity: 0.3;
 }
 .footer-page__social-list {
   display: flex;
@@ -1494,11 +1504,14 @@ img {
     font-size: 18px;
   }
 }
-.designed__icon:hover path {
-  fill: #283645;
+.designed__icon {
+  color: #d22856;
 }
-.designed__icon:active path {
-  fill: #283645;
+.designed__icon:hover use {
+  color: #283645;
+}
+.designed__icon:active use {
+  color: #283645;
   opacity: 0.3;
 }
 .catalog-page__body {

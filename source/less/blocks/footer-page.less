@@ -71,6 +71,16 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+  color: #283645;
+
+  &:hover use {
+    color: #d22856;
+  }
+
+  &:active use {
+    color: #283645;
+    opacity: 0.3;
+  }
 }
 
 .footer-page__social-list {
@@ -142,12 +152,14 @@
 }
 
 .designed__icon {
-  &:hover path {
-    fill: #283645;
+  color: #d22856;
+
+  &:hover use {
+    color: #283645;
   }
 
-  &:active path {
-    fill: #283645;
+  &:active use {
+    color: #283645;
     opacity: 0.3;
   }
 }
