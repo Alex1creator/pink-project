@@ -79,7 +79,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0 20px 21px;
-  padding: 18px 0 0 18px;
+  padding: 18px 18px 0 18px;
   background-color: #f2f2f2;
   font-weight: 700;
 
@@ -100,7 +100,14 @@
   }
 }
 
+.first-foto__user-name {
+  max-width: 160px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .first-foto__foto-description--mobile span {
+  max-width: 160px;
   font-weight: 300;
   text-transform: uppercase;
   margin-left: 3px;
@@ -126,6 +133,7 @@
   color: #d22856;
 
   @media (min-width: @tablet-width) {
+    max-width: 261px;
     display: flex;
     flex-direction: row-reverse;
     padding: 0;
