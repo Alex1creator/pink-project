@@ -23,7 +23,6 @@
     width: 100%;
     background-image: url("../img/back-desktop.jpg");
     background-size: contain;
-    max-height: 2056px;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -203,7 +202,6 @@ img {
   }
 }
 .header-page__navigation-list {
-  position: absolute;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -269,6 +267,15 @@ img {
   text-transform: uppercase;
   background: #283645;
 }
+.header-page__navigation-link span {
+  display: inline-block;
+  max-width: 300px;
+}
+@media (min-width: 660px) {
+  .header-page__navigation-link span {
+    max-width: 600px;
+  }
+}
 @media (min-width: 1200px) {
   .header-page__navigation-link {
     background: none;
@@ -330,6 +337,7 @@ img {
   line-height: 18px;
   font-weight: 700;
   margin: 29px auto;
+  max-width: 220px;
 }
 .buttons-block__download-button:hover {
   color: #d22855;

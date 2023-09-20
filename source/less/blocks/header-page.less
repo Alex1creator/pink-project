@@ -223,7 +223,7 @@
 // }
 
 .header-page__navigation-list {
-  position: absolute;
+  // position: absolute;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -288,6 +288,15 @@
   padding-bottom: 15px;
   text-transform: uppercase;
   background: #283645;
+
+  & span {
+    display: inline-block;
+    max-width: 300px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 600px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     background: none;
