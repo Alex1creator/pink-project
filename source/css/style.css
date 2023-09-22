@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: top center;
   background-color: #ffffff;
 }
@@ -277,6 +277,11 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .header-page__navigation-link span {
+    max-width: 141px;
+  }
+}
+@media (min-width: 1200px) {
   .header-page__navigation-link {
     background: none;
     line-height: 18px;
@@ -337,7 +342,7 @@ img {
   line-height: 18px;
   font-weight: 700;
   margin: 29px auto;
-  max-width: 220px;
+  max-width: 229px;
 }
 .buttons-block__download-button:hover {
   color: #d22855;
@@ -357,6 +362,7 @@ img {
     padding: 16px 29px;
     margin: 36px 0 67px 0;
     font-size: 21px;
+    max-width: 241px;
   }
 }
 .buttons-block__link-list {
@@ -1093,8 +1099,10 @@ img {
 }
 @media (min-width: 660px) {
   .tariffs__price--width {
-    width: 152px;
+    width: 142px;
     margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
