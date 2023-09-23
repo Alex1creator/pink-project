@@ -404,7 +404,7 @@ img {
   .buttons-block__description-buttons--style {
     font-size: 18px;
     width: 300px;
-    padding-bottom: 115px;
+    padding-bottom: 125px;
     padding-top: 26px;
   }
 }
@@ -514,7 +514,7 @@ img {
   .promo__header--modificator {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 73px;
+    padding-top: 63px;
     padding-bottom: 0;
   }
 }
@@ -573,7 +573,7 @@ img {
 @media (min-width: 1200px) {
   .promo__advantage-list--layout {
     position: relative;
-    top: -93px;
+    top: -87px;
     display: grid;
     grid-template-columns: 252px 252px 252px;
     column-gap: 68px;
@@ -619,7 +619,7 @@ img {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    padding-top: 63px;
+    padding-top: 56px;
   }
 }
 .promo__advantage-title {
@@ -650,6 +650,8 @@ img {
     line-height: 30px;
     text-align: center;
     margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .promo__foto-list {
@@ -669,7 +671,7 @@ img {
     column-gap: 137px;
     justify-content: center;
     order: 1;
-    background: linear-gradient(175deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2);
+    background: linear-gradient(175deg, #ffffff 153px, #f2f2f2 153px, #f2f2f2);
   }
 }
 .promo__foto-item {
@@ -800,7 +802,8 @@ img {
 @media (min-width: 1200px) {
   .effect__title--width {
     width: 298px;
-    margin-top: 112px;
+    margin-top: 117px;
+    margin-left: 5px;
   }
 }
 .effect__description {
@@ -1233,6 +1236,7 @@ img {
     position: relative;
     top: -48px;
     padding-top: 61px;
+    padding-bottom: 5px;
   }
 }
 .contacts__title {
@@ -1338,7 +1342,7 @@ img {
     height: 502px;
   }
   .contacts__map--mobile iframe {
-    height: 502px;
+    height: 495px;
     width: 100%;
   }
 }
@@ -1377,8 +1381,9 @@ img {
 }
 @media (min-width: 1200px) {
   .footer-page {
-    padding-top: 73px;
+    padding-top: 60px;
     padding-bottom: 88px;
+    margin-top: -48px;
   }
 }
 .footer-page-padding {
@@ -1427,7 +1432,7 @@ img {
   padding-bottom: 40px;
   padding-top: 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .footer-page__logo-desktop {
     display: none;
   }
