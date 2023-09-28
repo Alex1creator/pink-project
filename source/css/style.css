@@ -2,9 +2,9 @@
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/back-mobile.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-position: top center;
-  background-color: #ffffff;
+  background-color: #081A27;
 }
 @media (min-width: 660px) {
   .page__body {
@@ -381,8 +381,8 @@ img {
 @media (min-width: 1200px) {
   .buttons-block__link-list {
     padding-left: 45px;
-    -webkit-margin-after: 11px;
-            margin-block-end: 11px;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
     justify-content: start;
   }
 }
@@ -409,7 +409,7 @@ img {
   .buttons-block__description-buttons--style {
     font-size: 18px;
     width: 300px;
-    padding-bottom: 125px;
+    padding-bottom: 113px;
     padding-top: 26px;
   }
 }
@@ -417,6 +417,8 @@ img {
   .buttons-block__description-buttons--style {
     margin: 0;
     text-align: center;
+    padding-bottom: 111px;
+    padding-top: 0;
   }
 }
 .promo__intro {
@@ -478,7 +480,7 @@ img {
   .slogan-block__image {
     width: 1050px;
     height: 645px;
-    top: -1px;
+    top: -13px;
     right: -70px;
   }
 }
@@ -519,7 +521,7 @@ img {
   .promo__header--modificator {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 63px;
+    padding-top: 74px;
     padding-bottom: 0;
   }
 }
@@ -806,7 +808,7 @@ img {
 }
 @media (min-width: 1200px) {
   .effect__title--width {
-    width: 298px;
+    width: 554px;
     margin-top: 117px;
     margin-left: 5px;
   }
@@ -847,6 +849,9 @@ img {
   font-weight: 400;
   font-size: 14px;
 }
+.effect__link--layout {
+  display: inline-block;
+}
 @media (min-width: 660px) {
   .effect__link--layout {
     line-height: 24px;
@@ -856,6 +861,7 @@ img {
   .effect__link--layout {
     font-size: 18px;
     line-height: 30px;
+    max-width: 554px;
   }
 }
 .reviews {
@@ -1084,6 +1090,20 @@ img {
 @media (min-width: 1200px) {
   .tariffs__table-title:nth-of-type(3) {
     background-position: 0 0;
+  }
+}
+.tariffs__table-title--width {
+  display: inline-block;
+  width: 141px;
+}
+@media (min-width: 660px) {
+  .tariffs__table-title--width {
+    width: 104px;
+  }
+}
+@media (min-width: 1200px) {
+  .tariffs__table-title--width {
+    width: 201px;
   }
 }
 .tariffs__table-title--padding {
@@ -1330,6 +1350,9 @@ img {
   .contacts__address {
     margin-top: 21px;
   }
+}
+.contacts__phone-number {
+  display: inline-block;
 }
 .contacts__map--mobile {
   position: relative;
