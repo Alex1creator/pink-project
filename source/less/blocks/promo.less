@@ -2,6 +2,10 @@
   position: relative;
   background-color: #ffffff;
   display: grid;
+
+  @media (min-width: @tablet-width) {
+    // grid-template-columns: 330px 330px;
+  }
 }
 
 .promo__header {
@@ -50,6 +54,19 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
+.promo__advantage-list-wrapper {
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: initial;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .promo__intro--adaptive {
   font-size: 24px;
   line-height: 29px;
@@ -86,8 +103,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    top: -87px;
     display: grid;
     grid-template-columns: 252px 252px 252px;
     column-gap: 68px;
@@ -176,6 +191,13 @@
   padding-inline-start: 0;
   background-color: #f2f2f2;
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 35px;
+    left: 22px;
+    background-color: transparent;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 186px 186px 186px;
@@ -221,9 +243,9 @@
 
 .promo__foto-item--main {
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 245px;
-    left: 26px;
+    // position: relative;
+    // top: -530px;
+    // left: 26px;
     text-align: left;
 
     img {
